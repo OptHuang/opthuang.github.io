@@ -16,8 +16,8 @@ style = "github-dark"
   info = "Welcome to My Math Subspace"
   description = "Cun Huang's personal website"
   keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
+  avatarurl = "/images/avatar.jpg"
+  gravatar = "john.doe@example.com"
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
@@ -47,10 +47,10 @@ style = "github-dark"
   weight = 1
   url = "https://github.com/OptHuang/"
 [[params.social]]
-  name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
+  name = "Email"
+  icon = "fa fa-envelope-o"
   weight = 2
-  url = "https://gitlab.com/johndoe/"
+  url = "huangcunxin@outlook.com"
 [[params.social]]
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
