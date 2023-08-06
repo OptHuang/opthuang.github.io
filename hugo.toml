@@ -1,4 +1,4 @@
-baseURL = "https://www.hcx.com"
+baseURL = "https://opthuang.github.io/personal-website/"
 title = "huang"
 theme = "hugo-coder"
 languagecode = "en"
@@ -14,10 +14,10 @@ style = "github-dark"
 [params]
   author = "Cunxin Huang"
   info = "Welcome to My Math Subspace"
-  description = "Cun Huang's personal website"
+  description = "Cunxin Huang's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "/images/avatar.jpg"
-  gravatar = "john.doe@example.com"
+  #gravatar = "john.doe@example.com"
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
@@ -48,9 +48,9 @@ style = "github-dark"
   url = "https://github.com/OptHuang/"
 [[params.social]]
   name = "Email"
-  icon = "fa fa-envelope-o"
+  icon = "fa fa-envelope-o fa-2x"
   weight = 2
-  url = "huangcunxin@outlook.com"
+  url = "mailto:huangcunxin@outlook.com"
 [[params.social]]
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
