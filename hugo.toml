@@ -1,20 +1,20 @@
-baseURL = 'https://OptHuang.github.io/personal-website'
-title = "johndoe"
+baseURL = "https://www.hcx.com"
+title = "huang"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
 paginate = 20
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "abce"
 
 [markup.highlight]
 style = "github-dark"
 
 [params]
-  author = "John Doe"
-  info = "Full Stack DevOps and Magician"
-  description = "John Doe's personal website"
+  author = "Cunxin Huang"
+  info = "Welcome to My Math Subspace"
+  description = "Cun Huang's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
   #gravatar = "john.doe@example.com"
@@ -23,7 +23,7 @@ style = "github-dark"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2019
+  since = 2023
 
   enableTwemoji = true
 
@@ -45,7 +45,7 @@ style = "github-dark"
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/johndoe/"
+  url = "https://github.com/OptHuang/"
 [[params.social]]
   name = "Gitlab"
   icon = "fa fa-gitlab fa-2x"
@@ -59,10 +59,18 @@ style = "github-dark"
 
 # Menu links
 [[menu.main]]
-  name = "Blog"
+  name = "Resume"
   weight = 1
   url  = "posts/"
 [[menu.main]]
-  name = "About"
+  name = "Blog"
   weight = 2
   url = "about/"
+[[menu.main]]
+  name = "Papers"
+  weight = 3
+  url  = "posts/"
+[[menu.main]]
+  name = "Talks"
+  weight = 4
+  url  = "posts/"

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>johndoe</title>
-    <link>https://OptHuang.github.io/personal-website/</link>
-    <description>Recent content on johndoe</description>
+    <title>huang</title>
+    <link>https://www.hcx.com/</link>
+    <description>Recent content on huang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://OptHuang.github.io/personal-website/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://www.hcx.com/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
