@@ -1,5 +1,5 @@
 baseURL = "https://opthuang.github.io/personal-website/"
-title = "Home"
+title = "Cunxin's Homepage"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -17,7 +17,12 @@ author = "Cunxin Huang"
 description = "Cunxin Huang's personal website"
 keywords = "math,code,blog"
 info = ["Welcome to My Math Subspace"]
-avatarURL = "images/avatar_1.jpg"
+avatarURL = "images/avatar.jpg"
+
+faviconSVG = "images/favicon.svg"
+favicon_32 = "images/favicon-32x32.png"
+favicon_16 = "images/favicon-16x16.png"
+
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2023
@@ -129,10 +134,10 @@ weight = 1
 url = "https://github.com/OptHuang/"
 
 [[params.social]]
-name = "Gitlab"
-icon = "fa fa-2x fa-gitlab"
+name = "ORCID"
+icon = "fa fa-2x fa-orcid"
 weight = 2
-url = "https://gitlab.com/johndoe/"
+url = "https://orcid.org/0000-0001-7523-6980/"
 
 [[params.social]]
 name = "Email"
@@ -144,7 +149,10 @@ url = "mailto:huangcunxin@outlook.com"
 [languages.en]
 languageName = "English"
 
-
+[[languages.en.menu.main]]
+name = "Resume"
+weight = 1
+url = "resume/"
 
 [[languages.en.menu.main]]
 name = "Resume"
@@ -168,7 +176,7 @@ url = "talks/"
 
 [languages.zh]
 languageName = "中文"
-title = "主页"
+title = "存昕的主页"
 
 [languages.zh.params]
 author = "黄存昕"
