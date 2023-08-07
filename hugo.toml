@@ -86,7 +86,7 @@ url = "home/"
 [[languages.en.menu.main]]
 name = "Resume"
 weight = 2
-url = "documents/zh/CV.pdf"
+url = "documents/CV.pdf"
 
 [[languages.en.menu.main]]
 name = "Blog"
@@ -103,37 +103,37 @@ name = "Talks"
 weight = 5
 url = "talks/"
 
-[languages.zh]
+[languages.zh-cn]
 languageName = "中文"
 title = "存昕的网站"
 
-[languages.zh.params]
+[languages.zh-cn.params]
 author = "黄存昕"
 info = "欢迎来到我的数学子空间"
 description = "黄存昕的个人网站"
 keywords = "数学，代码，博客"
 
-[[languages.zh.menu.main]]
+[[languages.zh-cn.menu.main]]
 name = "主页"
 weight = 1
 url = "home/"
 
-[[languages.zh.menu.main]]
+[[languages.zh-cn.menu.main]]
 name = "简历"
 weight = 2
-url = "/documents/CV.pdf"
+url = "documents/CV.pdf"
 
-[[languages.zh.menu.main]]
+[[languages.zh-cn.menu.main]]
 name = "博客"
 weight = 3
 url = "blog/"
 
-[[languages.zh.menu.main]]
+[[languages.zh-cn.menu.main]]
 name = "文章"
 weight = 4
 url = "papers/"
 
-[[languages.zh.menu.main]]
+[[languages.zh-cn.menu.main]]
 name = "报告"
 weight = 5
 url = "talks/"

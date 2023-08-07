@@ -2,112 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://opthuang.github.io/blog/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/blog/"
-                />
+    <loc>https://opthuang.github.io/zh-cn/blog/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://opthuang.github.io/blog/"
                 />
-  </url><url>
-    <loc>https://opthuang.github.io/home/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/home/"
+                href="https://opthuang.github.io/zh-cn/blog/"
                 />
+  </url><url>
+    <loc>https://opthuang.github.io/zh-cn/home/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://opthuang.github.io/home/"
                 />
-  </url><url>
-    <loc>https://opthuang.github.io/papers/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/papers/"
+                href="https://opthuang.github.io/zh-cn/home/"
                 />
+  </url><url>
+    <loc>https://opthuang.github.io/zh-cn/papers/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://opthuang.github.io/papers/"
                 />
-  </url><url>
-    <loc>https://opthuang.github.io/talks/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/talks/"
+                href="https://opthuang.github.io/zh-cn/papers/"
                 />
+  </url><url>
+    <loc>https://opthuang.github.io/zh-cn/talks/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://opthuang.github.io/talks/"
                 />
-  </url><url>
-    <loc>https://opthuang.github.io/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/authors/"
+                href="https://opthuang.github.io/zh-cn/talks/"
                 />
+  </url><url>
+    <loc>https://opthuang.github.io/zh-cn/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://opthuang.github.io/authors/"
                 />
-  </url><url>
-    <loc>https://opthuang.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/categories/"
+                href="https://opthuang.github.io/zh-cn/authors/"
                 />
+  </url><url>
+    <loc>https://opthuang.github.io/zh-cn/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://opthuang.github.io/categories/"
                 />
-  </url><url>
-    <loc>https://opthuang.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://opthuang.github.io/"
+                href="https://opthuang.github.io/zh-cn/categories/"
                 />
   </url><url>
-    <loc>https://opthuang.github.io/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/series/"
-                />
+    <loc>https://opthuang.github.io/zh-cn/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://opthuang.github.io/series/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://opthuang.github.io/zh-cn/series/"
+                />
   </url><url>
-    <loc>https://opthuang.github.io/tags/</loc>
+    <loc>https://opthuang.github.io/zh-cn/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://opthuang.github.io/tags/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://opthuang.github.io/zh-cn/tags/"
                 />
+  </url><url>
+    <loc>https://opthuang.github.io/zh-cn/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://opthuang.github.io/tags/"
+                href="https://opthuang.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://opthuang.github.io/zh-cn/"
                 />
   </url>
 </urlset>
