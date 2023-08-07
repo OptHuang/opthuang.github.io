@@ -1,4 +1,4 @@
-baseURL = "https://opthuang.github.io/personal-website/"
+baseURL = "https://opthuang.github.io/"
 title = "Cunxin's Website"
 theme = "hugo-coder"
 languageCode = "en"
@@ -157,7 +157,7 @@ url = "home/"
 [[languages.en.menu.main]]
 name = "Resume"
 weight = 2
-url = "/documents/CV.pdf"
+url = "documents/CV.pdf"
 
 [[languages.en.menu.main]]
 name = "Blog"
@@ -192,7 +192,7 @@ url = "home/"
 [[languages.zh.menu.main]]
 name = "简历"
 weight = 2
-url = "resume/"
+url = "documents/CV.pdf"
 
 [[languages.zh.menu.main]]
 name = "博客"

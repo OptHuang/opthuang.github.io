@@ -2,64 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://opthuang.github.io/personal-website/authors/</loc>
+    <loc>https://opthuang.github.io/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://opthuang.github.io/personal-website/zh/authors/"
+                href="https://opthuang.github.io/zh/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://opthuang.github.io/personal-website/authors/"
+                href="https://opthuang.github.io/authors/"
                 />
   </url><url>
-    <loc>https://opthuang.github.io/personal-website/categories/</loc>
+    <loc>https://opthuang.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://opthuang.github.io/personal-website/zh/categories/"
+                href="https://opthuang.github.io/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://opthuang.github.io/personal-website/categories/"
+                href="https://opthuang.github.io/categories/"
                 />
   </url><url>
-    <loc>https://opthuang.github.io/personal-website/</loc>
+    <loc>https://opthuang.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://opthuang.github.io/personal-website/zh/"
+                href="https://opthuang.github.io/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://opthuang.github.io/personal-website/"
+                href="https://opthuang.github.io/"
                 />
   </url><url>
-    <loc>https://opthuang.github.io/personal-website/series/</loc>
+    <loc>https://opthuang.github.io/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://opthuang.github.io/personal-website/zh/series/"
+                href="https://opthuang.github.io/zh/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://opthuang.github.io/personal-website/series/"
+                href="https://opthuang.github.io/series/"
                 />
   </url><url>
-    <loc>https://opthuang.github.io/personal-website/tags/</loc>
+    <loc>https://opthuang.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://opthuang.github.io/personal-website/zh/tags/"
+                href="https://opthuang.github.io/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://opthuang.github.io/personal-website/tags/"
+                href="https://opthuang.github.io/tags/"
                 />
   </url>
 </urlset>
