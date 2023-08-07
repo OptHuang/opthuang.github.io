@@ -1,74 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Cunxin&#39;s Homepage</title>
+    <title>Tags on Cunxin&#39;s Website</title>
     <link>https://opthuang.github.io/personal-website/tags/</link>
-    <description>Recent content in Tags on Cunxin&#39;s Homepage</description>
+    <description>Recent content in Tags on Cunxin&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://opthuang.github.io/personal-website/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>css</title>
-      <link>https://opthuang.github.io/personal-website/tags/css/</link>
-      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/personal-website/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://opthuang.github.io/personal-website/tags/html/</link>
-      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/personal-website/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://opthuang.github.io/personal-website/tags/hugo/</link>
-      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/personal-website/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://opthuang.github.io/personal-website/tags/markdown/</link>
-      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/personal-website/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emoji</title>
-      <link>https://opthuang.github.io/personal-website/tags/emoji/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/personal-website/tags/emoji/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>text</title>
-      <link>https://opthuang.github.io/personal-website/tags/text/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/personal-website/tags/text/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Códigos curtos</title>
-      <link>https://opthuang.github.io/personal-website/tags/shortcodes/_index.pt-br/</link>
-      <pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate>
-      
-      <guid>https://opthuang.github.io/personal-website/tags/shortcodes/_index.pt-br/</guid>
-      <description></description>
-    </item>
-    
+    <language>en</language><atom:link href="https://opthuang.github.io/personal-website/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

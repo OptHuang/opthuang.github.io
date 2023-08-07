@@ -1,5 +1,5 @@
 baseURL = "https://opthuang.github.io/personal-website/"
-title = "Cunxin's Homepage"
+title = "Cunxin's Website"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -150,23 +150,23 @@ url = "mailto:huangcunxin@outlook.com"
 languageName = "English"
 
 [[languages.en.menu.main]]
-name = "Resume"
+name = "Home"
 weight = 1
-url = "resume/"
+url = "home/"
 
 [[languages.en.menu.main]]
 name = "Resume"
-weight = 1
-url = "resume/"
+weight = 2
+url = "/documents/CV.pdf"
 
 [[languages.en.menu.main]]
 name = "Blog"
-weight = 2
+weight = 3
 url = "blog/"
 
 [[languages.en.menu.main]]
 name = "Papers"
-weight = 3
+weight = 4
 url = "papers/"
 
 [[languages.en.menu.main]]
@@ -176,7 +176,7 @@ url = "talks/"
 
 [languages.zh]
 languageName = "中文"
-title = "存昕的主页"
+title = "存昕的网站"
 
 [languages.zh.params]
 author = "黄存昕"
@@ -185,18 +185,23 @@ description = "黄存昕的个人网站"
 keywords = "数学，代码，博客"
 
 [[languages.zh.menu.main]]
-name = "简历"
+name = "主页"
 weight = 1
+url = "home/"
+
+[[languages.zh.menu.main]]
+name = "简历"
+weight = 2
 url = "resume/"
 
 [[languages.zh.menu.main]]
 name = "博客"
-weight = 2
+weight = 3
 url = "blog/"
 
 [[languages.zh.menu.main]]
 name = "文章"
-weight = 3
+weight = 4
 url = "papers/"
 
 [[languages.zh.menu.main]]
