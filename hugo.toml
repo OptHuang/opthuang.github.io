@@ -86,7 +86,7 @@ url = "home/"
 [[languages.en.menu.main]]
 name = "Resume"
 weight = 2
-url = "documents/CV.pdf"
+url = "en/documents/CV.pdf"
 
 [[languages.en.menu.main]]
 name = "Blog"
@@ -121,7 +121,7 @@ url = "home/"
 [[languages.zh-cn.menu.main]]
 name = "简历"
 weight = 2
-url = "documents/CV.pdf"
+url = "zh-cn/documents/CV.pdf"
 
 [[languages.zh-cn.menu.main]]
 name = "博客"
@@ -137,4 +137,3 @@ url = "papers/"
 name = "报告"
 weight = 5
 url = "talks/"
-

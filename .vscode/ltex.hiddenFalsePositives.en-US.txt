@@ -1,0 +1,1 @@
+{"rule":"BACHELOR_ABBR","sentence":"^\\Q2018--2022, BSc in Information and Computing Science, School of Mathematics, Jilin University, Changchun, China.\\E$"}
