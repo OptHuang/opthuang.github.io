@@ -1,5 +1,5 @@
 baseURL = "https://opthuang.github.io/personal-website/"
-title = "Huang"
+title = "Home"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -17,7 +17,7 @@ author = "Cunxin Huang"
 description = "Cunxin Huang's personal website"
 keywords = "math,code,blog"
 info = ["Welcome to My Math Subspace"]
-avatarURL = "images/avatar.jpg"
+avatarURL = "images/avatar_1.jpg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2023
@@ -144,6 +144,8 @@ url = "mailto:huangcunxin@outlook.com"
 [languages.en]
 languageName = "English"
 
+
+
 [[languages.en.menu.main]]
 name = "Resume"
 weight = 1
@@ -166,7 +168,7 @@ url = "talks/"
 
 [languages.zh]
 languageName = "中文"
-title = "黄存昕"
+title = "主页"
 
 [languages.zh.params]
 author = "黄存昕"
