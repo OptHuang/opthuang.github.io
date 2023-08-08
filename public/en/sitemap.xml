@@ -26,18 +26,6 @@
                 href="https://opthuang.github.io/home/"
                 />
   </url><url>
-    <loc>https://opthuang.github.io/papers/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://opthuang.github.io/zh-cn/papers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://opthuang.github.io/papers/"
-                />
-  </url><url>
     <loc>https://opthuang.github.io/talks/</loc>
     <xhtml:link
                 rel="alternate"
@@ -84,6 +72,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://opthuang.github.io/"
+                />
+  </url><url>
+    <loc>https://opthuang.github.io/papers/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://opthuang.github.io/zh-cn/papers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://opthuang.github.io/papers/"
                 />
   </url><url>
     <loc>https://opthuang.github.io/series/</loc>

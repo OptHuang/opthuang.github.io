@@ -28,20 +28,21 @@
     
     <item>
       <title></title>
-      <link>https://opthuang.github.io/zh-cn/papers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/zh-cn/papers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://opthuang.github.io/zh-cn/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://opthuang.github.io/zh-cn/talks/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>文章</title>
+      <link>https://opthuang.github.io/zh-cn/papers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opthuang.github.io/zh-cn/papers/</guid>
+      <description>以下是我已发表或即将发表的文章.
+C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. Z. Gao, C. Huang, H. Song, and B. Zhou. Projection and contraction method for pricing american option under regime-switching model. Journal of Jilin University (Science Edition), 60:1090-1096, 2022. </description>
     </item>
     
   </channel>
