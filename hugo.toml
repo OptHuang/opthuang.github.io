@@ -74,9 +74,15 @@ weight = 2
 url = "https://orcid.org/0000-0001-7523-6980/"
 
 [[params.social]]
+name = "Google Scholar"
+icon = "fa fa-2x fa-graduation-cap"
+weight = 3
+url = "https://scholar.google.com/citations?user=lY90_hEAAAAJ&hl=en"
+
+[[params.social]]
 name = "Email"
 icon = "fa fa-2x fa-envelope-o"
-weight = 3
+weight = 4
 url = "mailto:huangcunxin@outlook.com"
 
 
@@ -107,6 +113,11 @@ url = "papers/"
 name = "Talks"
 weight = 5
 url = "talks/"
+
+[[languages.en.menu.main]]
+name = "Team Z"
+weight = 6
+url = "team/"
 
 [languages.zh-cn]
 languageName = "中文"
@@ -142,3 +153,8 @@ url = "papers/"
 name = "报告"
 weight = 5
 url = "talks/"
+
+[[languages.zh-cn.menu.main]]
+name = "团队 Z"
+weight = 6
+url = "team/"

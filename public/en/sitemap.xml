@@ -109,5 +109,17 @@
                 hreflang="en"
                 href="https://opthuang.github.io/talks/"
                 />
+  </url><url>
+    <loc>https://opthuang.github.io/team/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://opthuang.github.io/zh-cn/team/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://opthuang.github.io/team/"
+                />
   </url>
 </urlset>

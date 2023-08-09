@@ -98,6 +98,18 @@
                 href="https://opthuang.github.io/zh-cn/"
                 />
   </url><url>
+    <loc>https://opthuang.github.io/zh-cn/team/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://opthuang.github.io/team/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://opthuang.github.io/zh-cn/team/"
+                />
+  </url><url>
     <loc>https://opthuang.github.io/zh-cn/papers/</loc>
     <xhtml:link
                 rel="alternate"
