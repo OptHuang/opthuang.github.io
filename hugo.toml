@@ -81,7 +81,7 @@ url = "https://scholar.google.com/citations?user=lY90_hEAAAAJ&hl=en"
 
 [[params.social]]
 name = "Email"
-icon = "fa fa-2x fa-envelope-o"
+icon = "fa fa-2x fa-envelope"
 weight = 4
 url = "mailto:huangcunxin@outlook.com"
 
