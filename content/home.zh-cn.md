@@ -9,7 +9,7 @@ draft: false
 
 我目前的研究兴趣主要集中于[数学优化](https://en.wikipedia.org/wiki/Mathematical_optimization)及其应用, 特别是
 
-- [无导数优化](https://en.wikipedia.org/wiki/Derivative-free_optimization),
+- [无导数优化](https://en.wikipedia.org/wiki/Derivative-free_optimization) (我们制作了一个关于无导数优化的科普视频, 你可以点击[这里](https://www.bilibili.com/video/BV19N4y1U77E/?spm_id_from=333.337.search-card.all.click&vd_source=a181d757948d784efb0cc0e55a618bd2)查看),
 - 随机化方法.
 
 ## 教育经历

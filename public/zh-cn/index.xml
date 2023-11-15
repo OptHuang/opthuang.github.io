@@ -5,57 +5,48 @@
     <link>https://opthuang.github.io/zh-cn/</link>
     <description>Recent content on 存昕的网站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://opthuang.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <atom:link href="https://opthuang.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://opthuang.github.io/zh-cn/home/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://opthuang.github.io/zh-cn/home/</guid>
       <description>我目前在香港理工大学的应用数学系攻读博士学位, 接受张在坤助理教授和陈小君教授的指导.
 研究兴趣 链接到标题 我目前的研究兴趣主要集中于数学优化及其应用, 特别是
-无导数优化, 随机化方法. 教育经历 链接到标题 2022&amp;ndash;2026 (预计), 博士在读, 应用优化和最优控制, 香港理工大学, 应用数学系, 香港特别行政区, 中国. 导师: 张在坤助理教授, 合作导师: 陈小君教授. 获得由香港研究资助委员会支持的香港博士研究生奖学金计划的资助. 2018&amp;ndash;2022, 理学学士, 信息与计算科学, 吉林大学, 数学学院, 长春, 中国. </description>
+无导数优化 (我们制作了一个关于无导数优化的科普视频, 你可以点击这里查看), 随机化方法. 教育经历 链接到标题 2022&amp;ndash;2026 (预计), 博士在读, 应用优化和最优控制, 香港理工大学, 应用数学系, 香港特别行政区, 中国. 导师: 张在坤助理教授, 合作导师: 陈小君教授. 获得由香港研究资助委员会支持的香港博士研究生奖学金计划的资助. 2018&amp;ndash;2022, 理学学士, 信息与计算科学, 吉林大学, 数学学院, 长春, 中国. </description>
     </item>
-    
     <item>
       <title>报告</title>
       <link>https://opthuang.github.io/zh-cn/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://opthuang.github.io/zh-cn/talks/</guid>
       <description>以下是我做过的报告列表, 内含会议网站和我的幻灯片链接.
 Randomized Direct Search for Derivative-free Optimization. AMA613, 香港, 中国, 2023. Non-convergence Analysis of Probabilistic Direct Search. 第九届中国运筹学会数学规划分会研究生论坛, 重庆, 中国, 2023. Randomized Direct Search for Derivative-free Optimization. AMA613, 香港, 中国, 2023. Non-convergence of Probabilistic Direct Search. 第十四届数值优化与数值代数国际会议 (ICNONLA2023), 太原, 山西, 中国, 2023. 持续更新!</description>
     </item>
-    
     <item>
       <title>博客</title>
       <link>https://opthuang.github.io/zh-cn/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://opthuang.github.io/zh-cn/blog/</guid>
       <description>即将来袭!</description>
     </item>
-    
     <item>
       <title>团队 Z</title>
       <link>https://opthuang.github.io/zh-cn/team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://opthuang.github.io/zh-cn/team/</guid>
       <description>团队总管: 助理教授 张在坤 (右二)
 团队成员:
 博士后 Tom M. Ragonneau (左二) 博士候选人 李海天 (左一) 博士生 黄存昕 (右一) 团队和袁亚湘院士 (居中) 的合影</description>
     </item>
-    
     <item>
       <title>文章</title>
       <link>https://opthuang.github.io/zh-cn/papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://opthuang.github.io/zh-cn/papers/</guid>
       <description>以下是我已发表或即将发表的文章.
 C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. 高子涵, 黄存昕, 宋海明, 周搏成. 求解体制转换模型下美式期权定价问题的投影收缩算法. 吉林大学学报 (理学版), 60:1090-1096, 2022. 持续更新!</description>
     </item>
-    
   </channel>
 </rss>

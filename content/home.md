@@ -9,7 +9,7 @@ I am a PhD student at [Department of Applied Mathematics](https://www.polyu.edu.
 
 My research interests mainly focus on [mathematical optimization](https://en.wikipedia.org/wiki/Mathematical_optimization) and its applications, especially
 
-- [derivative-free optimization](https://en.wikipedia.org/wiki/Derivative-free_optimization),
+- [derivative-free optimization (DFO)](https://en.wikipedia.org/wiki/Derivative-free_optimization) (we made a Chinese popular science video about DFO and you can check it [here](https://www.bilibili.com/video/BV19N4y1U77E/?spm_id_from=333.337.search-card.all.click&vd_source=a181d757948d784efb0cc0e55a618bd2)),
 - randomized methods.
 
 ## Education
