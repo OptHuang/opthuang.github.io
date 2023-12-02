@@ -5,48 +5,57 @@
     <link>https://opthuang.github.io/</link>
     <description>Recent content on Cunxin&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <atom:link href="https://opthuang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://opthuang.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://opthuang.github.io/home/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://opthuang.github.io/home/</guid>
       <description>I am a PhD student at Department of Applied Mathematics, The Hong Kong Polytechnic University, supervised by Dr. Zaikun Zhang and co-supervised Prof. Xiaojun Chen.
 Research interests Link to heading My research interests mainly focus on mathematical optimization and its applications, especially
 derivative-free optimization (DFO) (we made a Chinese popular science video about DFO and you can check it here), randomized methods. Education Link to heading 2022&amp;ndash;2026 (expected), PhD student in Applied Optimization and Optimal Control, Department of Applied Mathematics, The Hong Kong Polytechnic University, Hong Kong SAR, China.</description>
     </item>
+    
     <item>
       <title>Blog</title>
       <link>https://opthuang.github.io/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://opthuang.github.io/blog/</guid>
       <description>Coming soon!</description>
     </item>
+    
     <item>
       <title>Papers</title>
       <link>https://opthuang.github.io/papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://opthuang.github.io/papers/</guid>
       <description>This is a list of my publications.
 C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. Z. Gao, C. Huang, H. Song, and B. Zhou. Projection and contraction method for pricing american option under regime-switching model. Journal of Jilin University (Science Edition), 60:1090-1096, 2022. To be continued!</description>
     </item>
+    
     <item>
       <title>Talks</title>
       <link>https://opthuang.github.io/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://opthuang.github.io/talks/</guid>
       <description>This is a list of my talks, linked with the websites of the conferences and my slides.
 Non-convergence Analysis of Randomized Direct Search. AMA613, Hong Kong, China, 2023. Non-convergence Analysis of Probabilistic Direct Search. The 9th Graduate Student Forum of the Mathematical Programming Branch of ORSC, Chongqing, China, 2023. Randomized Direct Search for Derivative-free Optimization. AMA613, Hong Kong, China, 2023. Non-convergence of Probabilistic Direct Search. The 14th International Conference on Numerical Optimization and Numerical Linear Algebra (ICNONLA2023), Taiyuan, Shanxi, China, 2023.</description>
     </item>
+    
     <item>
       <title>Team Z</title>
       <link>https://opthuang.github.io/team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://opthuang.github.io/team/</guid>
       <description>Team Leader: Assistant Professor Zaikun Zhang (second from the right)
 Team Member:
 Postdoctoral Fellow Tom M. Ragonneau (second from the left) PhD Candidate Haitian Li (first from the left) PhD Student Cunxin Huang (first from the right) Group Photo with Professor Ya-xiang Yuan (middle)</description>
     </item>
+    
   </channel>
 </rss>
