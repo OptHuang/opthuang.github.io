@@ -24,7 +24,8 @@
       
       <guid>https://opthuang.github.io/zh-cn/talks/</guid>
       <description>以下是我做过的报告列表, 内含会议网站和我的幻灯片链接.
-Randomized Direct Search for Derivative-free Optimization. AMA613, 香港, 中国, 2023. Non-convergence Analysis of Probabilistic Direct Search. 第九届中国运筹学会数学规划分会研究生论坛, 重庆, 中国, 2023. Randomized Direct Search for Derivative-free Optimization. AMA613, 香港, 中国, 2023. Non-convergence of Probabilistic Direct Search. 第十四届数值优化与数值代数国际会议 (ICNONLA2023), 太原, 山西, 中国, 2023. 持续更新!</description>
+Non-convergence Analysis of Probabilistic Direct Search. The 25th International Symposium on Mathematical Programming (ISMP 2024), 蒙特利尔, 加拿大, 2024. Non-convergence Analysis of Probabilistic Direct Search. The 2nd Derivative-Free Optimization Symposium (DFOS 2024), 帕多瓦, 意大利, 2024. Non-convergence Analysis of Probabilistic Direct Search. 第九届中国运筹学会数学规划分会研究生论坛, 重庆, 中国, 2023. 以下是我做过的海报列表, 内含会议网站和我的海报链接.
+Non-convergence Analysis of Probabilistic Direct Search. The 2nd PolyU Research Student Conference (PRSC 2024), 香港, 中国, 2024. 持续更新!</description>
     </item>
     
     <item>
@@ -54,7 +55,7 @@ Randomized Direct Search for Derivative-free Optimization. AMA613, 香港, 中�
       
       <guid>https://opthuang.github.io/zh-cn/papers/</guid>
       <description>以下是我已发表或即将发表的文章.
-C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. 高子涵, 黄存昕, 宋海明, 周搏成. 求解体制转换模型下美式期权定价问题的投影收缩算法. 吉林大学学报 (理学版), 60:1090-1096, 2022. 持续更新!</description>
+C. Huang and Z. Zhang. Non-convergence Analysis of Probabilistic Direct Search. 即将发表, 2024. C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. 高子涵, 黄存昕, 宋海明, 周搏成. 求解体制转换模型下美式期权定价问题的投影收缩算法. 吉林大学学报 (理学版), 60:1090-1096, 2022. 持续更新!</description>
     </item>
     
   </channel>
