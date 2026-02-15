@@ -1,0 +1,50 @@
+{{ define "title" }}
+  {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container blog-cards">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ title (i18n (lower .Title)) | default .Title }}
+        </a>
+      </h1>
+    </header>
+    {{ .Content }}
+    <div class="cards-grid">
+      {{- range .Paginator.Pages -}}
+      <a href="{{ .RelPermalink }}" class="card">
+        <div class="card-image">
+          {{ if .Params.coverImage }}
+            <img src="{{ .Params.coverImage | relURL }}" alt="{{ .Title }}" loading="lazy">
+          {{ else }}
+            <div class="card-image-placeholder" style="background: {{ .Params.cardGradient | default `linear-gradient(135deg, #667eea 0%, #764ba2 100%)` }};">
+            </div>
+          {{ end }}
+        </div>
+        <div class="card-content">
+          {{ with .Params.tags }}
+          <div class="card-tags">
+            {{ range . }}
+            <span class="card-tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+          <h2 class="card-title">{{ .Title }}</h2>
+          <p class="card-description">{{ .Description }}</p>
+          <div class="card-meta">
+            <span class="card-date">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006") }}
+            </span>
+            <span class="card-readmore">
+              {{ if eq .Site.Language.Lang "zh-cn" }}阅读更多 →{{ else }}Read more →{{ end }}
+            </span>
+          </div>
+        </div>
+      </a>
+      {{- end -}}
+    </div>
+    {{ partial "pagination.html" . }}
+  </section>
+{{ end }}
