@@ -1,6 +1,7 @@
 ---
 title: "Notes on stochastic orders and submartingale-like assumptions for optimization"
 date: 2026-02-01
+draft: true
 description: "We investigate the role of stochastic orders and submartingale-like assumptions in the convergence analysis of optimization algorithms, providing a systematic framework for these fundamental tools."
 tags: ["Optimization", "Stochastic Analysis", "Work in Progress"]
 cardGradient: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)"

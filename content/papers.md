@@ -14,7 +14,7 @@ Below is a list of my research papers.
 
 ## Published
 
-- C. Huang, H. Song, J. Yang, and B. Zhou. [Error analysis of finite difference scheme for american option pricing under regime-switching with jumps](https://www.sciencedirect.com/science/article/abs/pii/S0377042723004284). *J. Comput. Appl. Math.*, accepted for publication, 2023. [[Note]](/posts/american-option/)
+- C. Huang, H. Song, J. Yang, and B. Zhou. [Error analysis of finite difference scheme for american option pricing under regime-switching with jumps](/documents/option_pricing.pdf). *J. Comput. Appl. Math.*, accepted for publication, 2023. [[Note]](/posts/american-option/)
 - Z. Gao, C. Huang, H. Song, and B. Zhou. Projection and contraction method for pricing american option under regime-switching model. *Journal of Jilin University (Science Edition)*, 60:1090-1096, 2022.
 
 ## Work in Progress

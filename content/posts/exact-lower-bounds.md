@@ -1,6 +1,7 @@
 ---
 title: "Exact lower bounds on the non-convergence probability of probabilistic direct search"
 date: 2026-02-01
+draft: true
 description: "We derive exact lower bounds on the non-convergence probability of probabilistic direct search methods by studying the distribution of a random series, providing sharp theoretical limits."
 tags: ["Optimization", "Probability", "Work in Progress"]
 cardGradient: "linear-gradient(135deg, #0c3483 0%, #a2b6df 100%)"
