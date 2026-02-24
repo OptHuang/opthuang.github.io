@@ -1,5 +1,5 @@
 ---
-title: "OptiProfiler: a platform for benchmarking optimization solvers"
+title: "OptiProfiler: A Platform for Benchmarking Optimization Solvers"
 date: 2026-01-20
 description: "We present OptiProfiler, an automated and flexible benchmarking platform for optimization solvers, with a focus on derivative-free optimization."
 tags: ["Optimization", "Benchmarking", "Software", "DFO"]
@@ -8,9 +8,9 @@ cardGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
 math: true
 ---
 
-> **Paper**: C. Huang, T. M. Ragonneau, and Z. Zhang. *OptiProfiler: a platform for benchmarking optimization solvers*. Preprint, 2026.
+> **Paper**: C. Huang, T. M. Ragonneau, and Z. Zhang. *OptiProfiler: A Platform for Benchmarking Optimization Solvers*. Preprint, 2026.
 >
-> [PDF](/documents/optiprofiler.pdf)
+> [PDF](/documents/optiprofiler.pdf) | [Poster (Nonsmooth 2026)](/documents/Nonsmooth_2026_Guangzhou_poster.pdf)
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
 

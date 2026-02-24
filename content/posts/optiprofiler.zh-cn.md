@@ -8,9 +8,9 @@ cardGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
 math: true
 ---
 
-> **论文**: C. Huang, T. M. Ragonneau, and Z. Zhang. *OptiProfiler: a platform for benchmarking optimization solvers*. 预印本, 2026.
+> **论文**: C. Huang, T. M. Ragonneau, and Z. Zhang. *OptiProfiler: A Platform for Benchmarking Optimization Solvers*. 预印本, 2026.
 >
-> [PDF](/documents/optiprofiler.pdf)
+> [PDF](/documents/optiprofiler.pdf) | [海报 (Nonsmooth 2026)](/documents/Nonsmooth_2026_Guangzhou_poster.pdf)
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
 

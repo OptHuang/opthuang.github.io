@@ -7,7 +7,7 @@ Below is a list of my research papers.
 
 ## Preprints
 
-- C. Huang, T. M. Ragonneau, and Z. Zhang. [OptiProfiler: a platform for benchmarking optimization solvers](/documents/optiprofiler.pdf). Preprint, 2026. [[Note]](/posts/optiprofiler/)
+- C. Huang, T. M. Ragonneau, and Z. Zhang. [OptiProfiler: A Platform for Benchmarking Optimization Solvers](/documents/optiprofiler.pdf). Preprint, 2026. [[Note]](/posts/optiprofiler/)
 - C. Huang and Z. Zhang. [Non-convergence analysis of probabilistic direct search](/documents/ncpds.pdf). Preprint, 2026. [[Note]](/posts/ncpds/)
 - C. Huang and Z. Zhang. [A unified series condition for the convergence of derivative-free trust region and direct search](/documents/series_condition.pdf). Preprint, 2026. [[Note]](/posts/unified-series/)
 - C. Huang and Z. Zhang. [Gradient convergence of direct search based on sufficient decrease](/documents/grad_converge.pdf). Preprint, 2026. [[Note]](/posts/gradient-convergence/)

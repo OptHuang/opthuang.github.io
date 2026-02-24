@@ -7,7 +7,7 @@ draft: false
 
 ## 预印本
 
-- C. Huang, T. M. Ragonneau, and Z. Zhang. [OptiProfiler: a platform for benchmarking optimization solvers](/documents/optiprofiler.pdf). 预印本, 2026. [[笔记]](/zh-cn/posts/optiprofiler/)
+- C. Huang, T. M. Ragonneau, and Z. Zhang. [OptiProfiler: A Platform for Benchmarking Optimization Solvers](/documents/optiprofiler.pdf). 预印本, 2026. [[笔记]](/zh-cn/posts/optiprofiler/)
 - C. Huang and Z. Zhang. [Non-convergence analysis of probabilistic direct search](/documents/ncpds.pdf). 预印本, 2026. [[笔记]](/zh-cn/posts/ncpds/)
 - C. Huang and Z. Zhang. [A unified series condition for the convergence of derivative-free trust region and direct search](/documents/series_condition.pdf). 预印本, 2026. [[笔记]](/zh-cn/posts/unified-series/)
 - C. Huang and Z. Zhang. [Gradient convergence of direct search based on sufficient decrease](/documents/grad_converge.pdf). 预印本, 2026. [[笔记]](/zh-cn/posts/gradient-convergence/)

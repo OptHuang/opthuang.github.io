@@ -10,7 +10,7 @@ math: true
 
 > **Paper**: C. Huang and Z. Zhang. *Non-convergence analysis of probabilistic direct search*. Preprint, 2026.
 >
-> [PDF](/documents/ncpds.pdf)
+> [PDF](/documents/ncpds.pdf) | [Poster (PRSC 2024)](/documents/PRSC_2024_HongKong_poster.pdf)
 
 ## Overview
 
