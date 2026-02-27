@@ -11,8 +11,8 @@ This is a list of my talks, linked with the websites of the conferences and my s
 
 This is a list of my posters, linked with the websites of the conferences and my posters.
 
-- [Non-convergence Analysis of Probabilistic Direct Search](/documents/PRSC_2024_HongKong_poster.pdf). [The 2nd PolyU Research Student Conference (PRSC 2024)](https://events.polyu.edu.hk/prsc2024/home), Hong Kong, China, 2024.
 - [OptiProfiler: A Platform for Benchmarking Optimization Solvers](/documents/Nonsmooth_2026_Guangzhou_poster.pdf). The 4th Guangzhou-Shenzhen Workshop on Nonsmooth Optimization, Guangzhou, China, 2026.
+- [Non-convergence Analysis of Probabilistic Direct Search](/documents/PRSC_2024_HongKong_poster.pdf). [The 2nd PolyU Research Student Conference (PRSC 2024)](https://events.polyu.edu.hk/prsc2024/home), Hong Kong, China, 2024.
 
 To be continued!
 

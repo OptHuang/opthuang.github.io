@@ -11,8 +11,8 @@ draft: false
 
 以下是我做过的海报列表, 内含会议网站和我的海报链接.
 
-- [Non-convergence Analysis of Probabilistic Direct Search](/documents/PRSC_2024_HongKong_poster.pdf). [The 2nd PolyU Research Student Conference (PRSC 2024)](https://events.polyu.edu.hk/prsc2024/home), 香港, 中国, 2024.
 - [OptiProfiler: A Platform for Benchmarking Optimization Solvers](/documents/Nonsmooth_2026_Guangzhou_poster.pdf). 第四届广州深圳非光滑优化研讨会, 广州, 中国, 2026.
+- [Non-convergence Analysis of Probabilistic Direct Search](/documents/PRSC_2024_HongKong_poster.pdf). [The 2nd PolyU Research Student Conference (PRSC 2024)](https://events.polyu.edu.hk/prsc2024/home), 香港, 中国, 2024.
 
 持续更新!
 
