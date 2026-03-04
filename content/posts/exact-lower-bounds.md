@@ -33,6 +33,10 @@ which governs the non-convergence behavior of probabilistic direct search (PDS).
 
 ## Key Ideas
 
-The random series $S$ satisfies the stochastic fixed-point equation $S \stackrel{d}{=} \gamma^Y \theta^{1-Y} S + Y$, identifying its distribution as the invariant measure of the random IFS $\lbrace x \mapsto \theta x,\; x \mapsto \gamma x + 1 \rbrace$ with probabilities $(p, 1-p)$. This connection enables the use of powerful tools from the theory of stochastic recurrence equations and iterated function systems to derive tail asymptotics, singularity conditions, and dimension formulas.
+The random series $S$ satisfies the stochastic fixed-point equation $S \stackrel{d}{=} \gamma^Y \theta^{1-Y} S + Y$, identifying its distribution as the invariant measure of the random IFS
+
+<div>$$f_0(x) = \theta x, \quad f_1(x) = \gamma x + 1$$</div>
+
+with probabilities $(p, 1-p)$. This connection enables the use of powerful tools from the theory of stochastic recurrence equations and iterated function systems to derive tail asymptotics, singularity conditions, and dimension formulas.
 
 **Practical implications**: The distributional results translate into concrete guidance for PDS parameter selection — the left-tail exponent $\log p / \log\theta$ governs how fast the non-convergence probability decays, while the right-tail exponent $\alpha$ controls displacement risk.

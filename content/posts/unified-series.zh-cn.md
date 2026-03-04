@@ -16,7 +16,7 @@ math: true
 
 无导数信赖域方法和直接搜索方法是无导数优化（DFO）的两大主要算法类别。尽管它们在算法上有所不同，本文揭示了一个统一的理论框架：**一个算法决定的级数的发散性控制着渐近收敛性**。具体地，我们识别出一个级数
 $$H = \sum_{k=0}^\infty \prod_{\ell=0}^{k-1} \gamma^{y_\ell} \theta^{1-y_\ell},$$
-其中 $\gamma \geq 1$ 和 $\theta \in (0,1)$ 是步长更新参数，$y_k \in \lbrace 0, 1\rbrace$ 指示第 $k$ 次迭代是否是"好的"（例如模型足够精确或方向集位置良好）。我们证明：**如果 $H = \infty$，则 $\liminf_{k\to\infty} \lVert\nabla f(x_k)\rVert = 0$**。
+其中 $\gamma \geq 1$ 和 $\theta \in (0,1)$ 是步长更新参数，$y_k$ 是一个二值指标，表示第 $k$ 次迭代是否是"好的"（例如模型足够精确或方向集位置良好）。我们证明：**如果 $H = \infty$，则 $\liminf_{k\to\infty} \lVert\nabla f(x_k)\rVert = 0$**。
 
 ## 研究动机
 

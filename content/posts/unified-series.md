@@ -16,7 +16,7 @@ math: true
 
 Derivative-free trust-region and direct-search methods are two major classes of derivative-free optimization (DFO) algorithms. Despite their algorithmic differences, this paper reveals a unified theoretical framework: **the divergence of an algorithm-determined series governs asymptotic convergence**. Specifically, we identify a series
 $$H = \sum_{k=0}^\infty \prod_{\ell=0}^{k-1} \gamma^{y_\ell} \theta^{1-y_\ell},$$
-where $\gamma \geq 1$ and $\theta \in (0,1)$ are step-size update parameters, and $y_k \in \lbrace 0, 1\rbrace$ indicates whether iteration $k$ is "good" (e.g., the model is accurate or the direction set is well-poised). We prove: **if $H = \infty$, then $\liminf_{k\to\infty} \lVert\nabla f(x_k)\rVert = 0$**.
+where $\gamma \geq 1$ and $\theta \in (0,1)$ are step-size update parameters, and $y_k$ is a binary indicator of whether iteration $k$ is "good" (e.g., the model is accurate or the direction set is well-poised). We prove: **if $H = \infty$, then $\liminf_{k\to\infty} \lVert\nabla f(x_k)\rVert = 0$**.
 
 ## Motivation
 

@@ -21,7 +21,9 @@ math: true
 
 ## 主要贡献
 
-- **随机占优定理**：若 $\lbrace Y_k \rbrace$ 满足 $P(Y_k = 1 \mid \mathcal{F}_{k-1}) \geq p$，则 $\lbrace \tilde{Y}_k \rbrace \preceq_{\text{st}} \lbrace Y_k \rbrace$，其中 $\lbrace \tilde{Y}_k \rbrace$ 是 i.i.d. Bernoulli($p$)。这在随机过程的通常随机序意义下成立
+- **随机占优定理**：若 <span>$\{Y_k\}$</span> 满足 $P(Y_k = 1 \mid \mathcal{F}_{k-1}) \geq p$，则
+<div>$$\{\tilde{Y}_k\} \;\preceq_{\text{st}}\; \{Y_k\},$$</div>
+其中 <span>$\{\tilde{Y}_k\}$</span> 是 i.i.d. Bernoulli($p$)。这在随机过程的通常随机序意义下成立
 
 - **Hoeffding 型界**：
 $$P\biggl(\frac{1}{n}\sum_{k=0}^{n-1} Y_k \geq p - \varepsilon\biggr) \geq 1 - e^{-2n\varepsilon^2},$$

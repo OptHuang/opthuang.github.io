@@ -33,8 +33,9 @@ math: true
 ## 核心思想
 
 **反证法**：假设 $\limsup_{k\to\infty} \lVert\nabla f(x_k)\rVert > 0$。基于梯度范数定义两个区域：
-- 小梯度区域：$S_\leq^\epsilon = \lbrace x : \lVert\nabla f(x)\rVert \leq \epsilon\rbrace$
-- 大梯度区域：$S_>^\epsilon = \lbrace x : \lVert\nabla f(x)\rVert > 2\epsilon\rbrace$
+
+<div>$$S_\leq^\epsilon = \{x : \lVert\nabla f(x)\rVert \leq \epsilon\}, \quad S_>^\epsilon = \{x : \lVert\nabla f(x)\rVert > 2\epsilon\}$$</div>
+
 
 **穿越分析**：通过停时 $m_j^\epsilon$ 和 $n_j^\epsilon$ 追踪迭代点进入/离开这些区域的时刻。关键观察：
 

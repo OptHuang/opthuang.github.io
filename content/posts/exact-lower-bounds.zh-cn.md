@@ -33,6 +33,10 @@ $$S = \sum_{k=0}^\infty Y_k \prod_{\ell=0}^{k-1} \gamma^{Y_\ell} \theta^{1-Y_\el
 
 ## 核心思想
 
-随机级数 $S$ 满足随机不动点方程 $S \stackrel{d}{=} \gamma^Y \theta^{1-Y} S + Y$，其分布是随机迭代函数系统 $\lbrace x \mapsto \theta x,\; x \mapsto \gamma x + 1 \rbrace$（概率为 $(p, 1-p)$）的不变测度。这一联系使得我们能够利用随机递推方程和迭代函数系统的强大工具来推导尾部渐近、奇异性条件和维数公式。
+随机级数 $S$ 满足随机不动点方程 $S \stackrel{d}{=} \gamma^Y \theta^{1-Y} S + Y$，其分布是随机迭代函数系统
+
+<div>$$f_0(x) = \theta x, \quad f_1(x) = \gamma x + 1$$</div>
+
+（概率为 $(p, 1-p)$）的不变测度。这一联系使得我们能够利用随机递推方程和迭代函数系统的强大工具来推导尾部渐近、奇异性条件和维数公式。
 
 **实际意义**：分布结果转化为 PDS 参数选择的具体指导 — 左尾指数 $\log p / \log\theta$ 控制非收敛概率的衰减速率，右尾指数 $\alpha$ 控制位移风险。

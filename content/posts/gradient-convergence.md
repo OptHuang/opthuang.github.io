@@ -33,8 +33,9 @@ This paper studies a direct-search method based on sufficient decrease for uncon
 ## Key Ideas
 
 **Proof by contradiction**: Suppose $\limsup_{k\to\infty} \lVert\nabla f(x_k)\rVert > 0$. Define two regions based on gradient norm:
-- Small gradient region: $S_\leq^\epsilon = \lbrace x : \lVert\nabla f(x)\rVert \leq \epsilon\rbrace$
-- Large gradient region: $S_>^\epsilon = \lbrace x : \lVert\nabla f(x)\rVert > 2\epsilon\rbrace$
+
+<div>$$S_\leq^\epsilon = \{x : \lVert\nabla f(x)\rVert \leq \epsilon\}, \quad S_>^\epsilon = \{x : \lVert\nabla f(x)\rVert > 2\epsilon\}$$</div>
+
 
 **Crossing analysis**: Track when iterates enter/exit these regions via stopping times $m_j^\epsilon$ and $n_j^\epsilon$. Key observations:
 

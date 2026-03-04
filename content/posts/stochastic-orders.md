@@ -21,7 +21,9 @@ Submartingale-like assumptions of the form $P(Y_k = 1 \mid \mathcal{F}_{k-1}) \g
 
 ## Main Contributions
 
-- **Stochastic domination theorem**: If $\lbrace Y_k \rbrace$ satisfies $P(Y_k = 1 \mid \mathcal{F}_{k-1}) \geq p$, then $\lbrace \tilde{Y}_k \rbrace \preceq_{\text{st}} \lbrace Y_k \rbrace$, where $\lbrace \tilde{Y}_k \rbrace$ is i.i.d. Bernoulli($p$). This holds in the usual stochastic order for stochastic processes
+- **Stochastic domination theorem**: If <span>$\{Y_k\}$</span> satisfies $P(Y_k = 1 \mid \mathcal{F}_{k-1}) \geq p$, then
+<div>$$\{\tilde{Y}_k\} \;\preceq_{\text{st}}\; \{Y_k\},$$</div>
+where <span>$\{\tilde{Y}_k\}$</span> is i.i.d. Bernoulli($p$). This holds in the usual stochastic order for stochastic processes
 
 - **Hoeffding-type bound**:
 $$P\biggl(\frac{1}{n}\sum_{k=0}^{n-1} Y_k \geq p - \varepsilon\biggr) \geq 1 - e^{-2n\varepsilon^2},$$
