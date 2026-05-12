@@ -71,7 +71,7 @@ url = "https://github.com/OptHuang/"
 name = "Google Scholar"
 icon = "fa fa-2x fa-graduation-cap"
 weight = 2
-url = "https://scholar.google.com/citations?user=lY90_hEAAAAJ&hl=en"
+url = "https://scholar.google.com/citations?user=py6ajyMAAAAJ&hl=en&oi=ao"
 
 [[params.social]]
 name = "ORCID"
