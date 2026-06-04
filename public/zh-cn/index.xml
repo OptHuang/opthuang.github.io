@@ -1,62 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>存昕的网站</title>
-    <link>https://opthuang.github.io/zh-cn/</link>
-    <description>Recent content on 存昕的网站</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://opthuang.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://opthuang.github.io/zh-cn/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/zh-cn/home/</guid>
-      <description>我目前在香港理工大学的应用数学系攻读博士学位, 接受张在坤助理教授和陈小君教授的指导.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>存昕的网站</title><link>https://opthuang.github.io/zh-cn/</link><description>Recent content on 存昕的网站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://opthuang.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>OptiProfiler Platform：在线基准测试沙箱平台</title><link>https://opthuang.github.io/zh-cn/posts/optiprofiler-platform/</link><pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/optiprofiler-platform/</guid><description>项目: 面向 OptiProfiler 的在线沙箱：用户上传求解器代码、选择测试配置，平台在 Docker 中执行 benchmark()，网络与资源受限，结果统一回传。
+线上地址: app.optprof.com
+代码仓库: github.com/optiprofiler/optiprofiler-platform
+🌐 平台: app.optprof.com
+📦 GitHub: github.com/optiprofiler/optiprofiler-platform
+🔗 OptiProfiler（包与文档）: www.optprof.com
+概述 链接到标题 OptiProfiler Platform 把「我有一份求解器实现」到「我有性能曲线和分数」之间的路径搬到浏览器里。前端连接 FastAPI 后端：上传经校验后进入 Celery + Redis 任务队列，工作进程在 Docker 沙箱里运行 OptiProfiler（预装依赖、限制资源、隔离网络）。产物写入持久化存储；界面可查任务状态、下载打包结果，并可接入 LLM 辅助能力（悬浮 Advisor 对话、任务完成的解读报告、失败时的自动调试等），与 optiprofiler-agent 集成。
+动机 链接到标题 降低门槛：很多人只需要临时对比几款求解器；网页沙箱省掉本地环境与版本对齐成本 安全与可控：不可信代码不能直接接触宿主机 —— 容器隔离配合上传代码的 AST 静态检查，降低明显滥用面 贴合运行形态：真实基准测试耗时长、偶发失败多；异步任务、重试与配额更符合实际运维需求 主要贡献 链接到标题 端到端 Web 技术栈 — Next.js 前端（app.optprof.com）、FastAPI API（认证、任务、文件）、Celery 工作者、Redis 消息代理 沙箱执行 — 独立运行器在受限环境中调用 optiprofiler.benchmark()；工作者侧通过子进程边界保证任务内并行策略稳定 账户与治理 — GitHub OAuth + JWT 会话、频控与每用户任务上限、旧任务淘汰等存储治理策略 与 Agent 协同 — 设计文档（ADR）说明如何挂载 OptiProfiler Agent：产品顾问对话、结果解读、失败自动调试等路径 核心思想 链接到标题 上传 → 校验 → 入队 → 执行 → 落盘。 架构文档描述了主路径：在任务排队前先做 AST 扫描拦截危险写法；工作者驱动状态从 queued 到 running 再到 success，前端在排队/执行阶段轮询。</description></item><item><title>OptiProfiler Agent：面向 DFO 基准测试工作流的 AI 助手</title><link>https://opthuang.github.io/zh-cn/posts/optiprofiler-agent/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/optiprofiler-agent/</guid><description>项目: 面向 OptiProfiler 的 AI 智能体工具 — 覆盖无导数优化基准测试的完整用户路径：提问 → 写脚本 → 调试错误 → 解读结果。
+仓库: github.com/optiprofiler/optiprofiler-agent
+📦 GitHub 仓库: github.com/optiprofiler/optiprofiler-agent
+🌐 OptiProfiler（母体平台）: www.optprof.com
+概述 链接到标题 OptiProfiler Agent 是叠在 OptiProfiler 基准测试栈之上的 Python 包与命令行工具。它把顾问（Advisor）、调试器（Debugger）和结果解读（Interpreter）封装成可编排的能力，让用户从「如何对比这些求解器？」一路走到「有可运行脚本 + 可读报告」，而不必在文档、终端和编辑器之间反复切换。默认运行 opagent（无子命令）即进入统一智能体：在 ReAct 式工具调用循环里自动在各子智能体之间路由。
+动机 链接到标题 端到端阻力大：基准测试要学 API、写胶水代码、修运行时错误、读性能曲线，每一步思维模式不同；单一对话入口能减少上下文切换 经验可复制：OptiProfiler 配置丰富（特征、曲线类型、求解器接口等）。用 LLM Wiki + 可选 RAG 组织知识，回答更容易「有据可查」、也便于维护 失败是常态：脚本常因参数或环境问题挂掉。调试路径支持运行—修补—重试，减少手工拷贝堆栈的工作量 主要贡献 链接到标题 三个专业化子智能体
+Advisor — 产品问答、适配求解器接口、生成基准脚本（跑之前） Debugger — 分析失败、给出修改建议、可选自动执行与重试（跑的过程中） Interpreter — 阅读分数与曲线、生成结构化自然语言报告（跑通之后） 统一智能体 — 单一 CLI 入口（opagent / optiprofiler-agent），汇集三类工具；/debug、/interpret、/chat 等快捷指令方便熟练用户</description></item><item><title>概率直接搜索非收敛概率的精确下界：随机级数的分布</title><link>https://opthuang.github.io/zh-cn/posts/exact-lower-bounds/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/exact-lower-bounds/</guid><description>状态：进行中，2026。
+这是一篇关于概率直接搜索非收敛现象的笔记。主要目标是从更定量的角度理解某些失败模式出现的可能性和尺度。
+稿件仍在准备中，因此这里暂时只保留非常简要的说明。
+更多内容即将更新。</description></item><item><title>关于优化中的随机序和类下鞅假设的笔记</title><link>https://opthuang.github.io/zh-cn/posts/stochastic-orders/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/stochastic-orders/</guid><description>状态：进行中，2026。
+这篇笔记探索随机比较工具在随机优化分析中的用法。重点是把一些常见的概率假设整理成更清晰、可复用的形式。
+稿件仍在准备中，因此这里暂时只保留非常简要的说明。
+更多内容即将更新。</description></item><item><title>OptiProfiler: 优化求解器基准测试平台</title><link>https://opthuang.github.io/zh-cn/posts/optiprofiler/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/optiprofiler/</guid><description>状态：进行中，2026。
+海报 (Nonsmooth 2026)
+官方网站: www.optprof.com
+GitHub 仓库: github.com/optiprofiler/optiprofiler
+概述 链接到标题 OptiProfiler 是一个优化求解器基准测试平台，目前主要面向无导数优化。它希望让求解器比较更容易运行、复现和查看。
+项目仍在持续开发中，相关稿件也还在准备。等公开版本整理好后，我会补充更完整的技术说明。
+更多内容即将更新。</description></item><item><title>无导数信赖域与直接搜索收敛的统一级数条件</title><link>https://opthuang.github.io/zh-cn/posts/unified-series/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/unified-series/</guid><description>状态：进行中，2026。
+这篇笔记尝试从一个共同视角理解无导数信赖域方法和直接搜索方法中的收敛机制。目标是在两类算法之间建立更清楚的结构联系。
+稿件仍在准备中，因此这里暂时只保留非常简要的说明。
+更多内容即将更新。</description></item><item><title>基于充分下降的直接搜索的梯度收敛性</title><link>https://opthuang.github.io/zh-cn/posts/gradient-convergence/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/gradient-convergence/</guid><description>状态：进行中，2026。
+这篇笔记研究一类直接搜索方法的收敛行为。关注点是一些简单的算法规则如何影响迭代点的长期表现。
+稿件仍在准备中，因此这里暂时只保留非常简要的说明。
+更多内容即将更新。</description></item><item><title>概率直接搜索的非收敛性分析</title><link>https://opthuang.github.io/zh-cn/posts/ncpds/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/ncpds/</guid><description>论文: C. Huang and Z. Zhang. Non-convergence analysis of probabilistic direct search. 预印本, 2026.
+PDF | 海报 (PRSC 2024)
+概述 链接到标题 本文建立了概率直接搜索（Probabilistic Direct Search）的非收敛理论。概率直接搜索是无导数优化的一类重要方法，通过随机化轮询方向来提高效率。现有收敛理论表明：当轮询方向集满足概率下降假设（probabilistic descent）时算法收敛。我们研究了一个自然的问题：当这些假设不满足时，算法会如何表现？ 我们证明：当轮询方向集形成概率上升集（probabilistic ascent sets）时，算法以正概率不收敛。
+研究动机 链接到标题 理论完整性：收敛分析和非收敛分析同样重要。系统研究&amp;quot;何时失败&amp;quot;能加深对算法行为的理解 实践指导：非收敛理论能指导算法参数（如轮询方向数量 $m$）的选择 更深刻的问题：类下鞅假设（submartingale-like assumptions）是否对随机优化方法的收敛是本质的？ 已知收敛结果：当 $m &amp;gt; \log_2(1 - \log\theta/\log\gamma)$ 时算法收敛（其中 $m$ 是轮询方向数，$\theta$ 是收缩因子，$\gamma$ 是扩张因子）。
+核心问题：当 $m &amp;lt; \log_2(1 - \log\theta/\log\gamma)$ 时会发生什么？
+主要贡献 链接到标题 非收敛定理：证明当轮询方向集形成 $p$-概率上升集（$p &amp;gt; 1 - p_0$，其中 $p_0 = \log\theta/\log(\gamma^{-1}\theta)$）时，算法以正概率不收敛到最优解
+典型情况的明确结果：对于均匀分布在单位球面上的轮询方向，当 $m &amp;lt; \log_2(1 - \log\theta/\log\gamma)$ 时，算法不会全局收敛</description></item><item><title>带跳跃的体制转换下美式期权定价有限差分格式的误差分析</title><link>https://opthuang.github.io/zh-cn/posts/american-option/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/posts/american-option/</guid><description>论文: C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023.
+PDF
+概述 链接到标题 本文针对体制转换跳跃-扩散模型（Merton 模型和 Kou 模型）下美式期权定价问题，开发了一种高效的数值方法。该问题可以描述为具有积分项和微分项的自由边界问题或互补问题，定义在无界域上。我们提出了一种新颖的截断技术，应用复合梯形公式和有限差分格式进行离散化，并使用投影收缩方法（PCM）求解得到的线性互补问题（LCP）。
+研究动机 链接到标题 经典期权定价模型面临几个局限性：
+Black-Scholes 模型无法解释由外部因素引起的资产价格跳跃现象 标准模型无法捕捉由短期政治或经济不确定性导致的期权价格周期性变化 结合体制转换和跳跃扩散模型会导致一个耦合的偏积分微分方程（PIDEs）系统，无法获得闭式解 主要面临两大挑战：
+问题是一个定义在无穷域上的偏积分微分方程，包含无界区域上的积分项，需要合理的截断方法 设计具有完整理论分析和高效求解方法的数值格式较为困难 主要贡献 链接到标题 新颖的截断技术：通过分析不同期权之间最优执行边界的关系来局域化无穷域问题。左边界条件是精确的（基于永久美式期权的界），而右边界是放松的。
+高效离散化：对积分项应用复合梯形公式（确保离散积分矩阵是 Toeplitz 矩阵），对微分项应用有限差分方法，得到具有数值友好结构的 LCP。
+完整理论分析：证明了离散格式的稳定性、单调性和一致性，并建立了 $O(\Delta\tau + \Delta x^2)$ 阶的误差估计。
+高效求解器：提出了一种定制的投影收缩方法（PCM）来求解离散化 LCP，充分利用了矩阵的特殊结构。
+数值验证：大量实验验证了理论结果，并证明了该方法对 Merton 模型和 Kou 模型的有效性。</description></item><item><title/><link>https://opthuang.github.io/zh-cn/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/home/</guid><description>我目前在香港理工大学的应用数学系攻读博士学位, 接受张在坤教授和陈小君教授的指导.
 研究兴趣 链接到标题 我目前的研究兴趣主要集中于数学优化及其应用, 特别是
-无导数优化 (我们制作了一个关于无导数优化的科普视频, 你可以点击这里查看), 随机化方法. 教育经历 链接到标题 2022&amp;ndash;2026 (预计), 博士在读, 应用优化和最优控制, 香港理工大学, 应用数学系, 香港特别行政区, 中国. 导师: 张在坤助理教授, 合作导师: 陈小君教授. 获得由香港研究资助委员会支持的香港博士研究生奖学金计划的资助. 2018&amp;ndash;2022, 理学学士, 信息与计算科学, 吉林大学, 数学学院, 长春, 中国. </description>
-    </item>
-    
-    <item>
-      <title>报告</title>
-      <link>https://opthuang.github.io/zh-cn/talks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/zh-cn/talks/</guid>
-      <description>以下是我做过的报告列表, 内含会议网站和我的幻灯片链接.
+无导数优化 (我们制作了一个关于无导数优化的科普视频, 你可以点击这里查看), 随机化方法. 教育经历 链接到标题 2022&amp;ndash;2026 (预计), 博士在读, 应用优化和最优控制, 香港理工大学, 应用数学系, 香港特别行政区, 中国. 导师: 张在坤教授和陈小君教授. 获得由香港研究资助委员会支持的香港博士研究生奖学金计划的资助. 2018&amp;ndash;2022, 理学学士, 信息与计算科学, 吉林大学, 数学学院, 长春, 中国.</description></item><item><title>报告</title><link>https://opthuang.github.io/zh-cn/talks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/talks/</guid><description>以下是我做过的报告列表, 内含会议网站和我的幻灯片链接.
 Non-convergence Analysis of Probabilistic Direct Search. The 25th International Symposium on Mathematical Programming (ISMP 2024), 蒙特利尔, 加拿大, 2024. Non-convergence Analysis of Probabilistic Direct Search. The 2nd Derivative-Free Optimization Symposium (DFOS 2024), 帕多瓦, 意大利, 2024. Non-convergence Analysis of Probabilistic Direct Search. 第九届中国运筹学会数学规划分会研究生论坛, 重庆, 中国, 2023. 以下是我做过的海报列表, 内含会议网站和我的海报链接.
-Non-convergence Analysis of Probabilistic Direct Search. The 2nd PolyU Research Student Conference (PRSC 2024), 香港, 中国, 2024. 持续更新!</description>
-    </item>
-    
-    <item>
-      <title>博客</title>
-      <link>https://opthuang.github.io/zh-cn/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/zh-cn/blog/</guid>
-      <description>即将来袭!</description>
-    </item>
-    
-    <item>
-      <title>团队 Z</title>
-      <link>https://opthuang.github.io/zh-cn/team/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/zh-cn/team/</guid>
-      <description>团队总管: 助理教授 张在坤 (右二)
-团队成员:
-博士后 Tom M. Ragonneau (左二) 博士候选人 李海天 (左一) 博士生 黄存昕 (右一) 团队和袁亚湘院士 (居中) 的合影</description>
-    </item>
-    
-    <item>
-      <title>文章</title>
-      <link>https://opthuang.github.io/zh-cn/papers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/zh-cn/papers/</guid>
-      <description>以下是我已发表或即将发表的文章.
-C. Huang and Z. Zhang. Non-convergence Analysis of Probabilistic Direct Search. 即将发表, 2024. C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. 高子涵, 黄存昕, 宋海明, 周搏成. 求解体制转换模型下美式期权定价问题的投影收缩算法. 吉林大学学报 (理学版), 60:1090-1096, 2022. 持续更新!</description>
-    </item>
-    
-  </channel>
-</rss>
+OptiProfiler: A Platform for Benchmarking Optimization Solvers. 第四届广州深圳非光滑优化研讨会, 广州, 中国, 2026. Non-convergence Analysis of Probabilistic Direct Search. The 2nd PolyU Research Student Conference (PRSC 2024), 香港, 中国, 2024.</description></item><item><title>文章</title><link>https://opthuang.github.io/zh-cn/papers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/zh-cn/papers/</guid><description>以下是我的研究论文列表。
+预印本 链接到标题 C. Huang and Z. Zhang. Non-convergence analysis of probabilistic direct search. 预印本, 2026. [笔记] 已发表 链接到标题 C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. [笔记] 高子涵, 黄存昕, 宋海明, 周搏成. 求解体制转换模型下美式期权定价问题的投影收缩算法. 吉林大学学报 (理学版), 60:1090-1096, 2022. 持续更新!</description></item></channel></rss>

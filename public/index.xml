@@ -1,61 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cunxin&#39;s Website</title>
-    <link>https://opthuang.github.io/</link>
-    <description>Recent content on Cunxin&#39;s Website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://opthuang.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://opthuang.github.io/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/home/</guid>
-      <description>I am a PhD student at Department of Applied Mathematics, The Hong Kong Polytechnic University, supervised by Dr. Zaikun Zhang and co-supervised Prof. Xiaojun Chen.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cunxin's Website</title><link>https://opthuang.github.io/</link><description>Recent content on Cunxin's Website</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://opthuang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>OptiProfiler Platform: Web Sandbox for Online Benchmarking</title><link>https://opthuang.github.io/posts/optiprofiler-platform/</link><pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/optiprofiler-platform/</guid><description>Project: Online sandbox for OptiProfiler — upload a solver, pick a test configuration, and let the platform run benchmark() in Docker with network isolation and resource limits.
+Live site: app.optprof.com
+Repository: github.com/optiprofiler/optiprofiler-platform
+🌐 Platform: app.optprof.com
+📦 GitHub: github.com/optiprofiler/optiprofiler-platform
+🔗 OptiProfiler (packages &amp;amp; docs): www.optprof.com
+Overview Link to heading OptiProfiler Platform closes the loop between “I have a solver file” and “I have profiles and scores” without installing MATLAB/Python toolchains locally.</description></item><item><title>OptiProfiler Agent: An AI Assistant for DFO Benchmarking Workflows</title><link>https://opthuang.github.io/posts/optiprofiler-agent/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/optiprofiler-agent/</guid><description>Project: AI agent toolkit for OptiProfiler — covers the full user journey of derivative-free optimization benchmarking: ask → script → debug → interpret.
+Repository: github.com/optiprofiler/optiprofiler-agent
+📦 GitHub Repository: github.com/optiprofiler/optiprofiler-agent
+🌐 OptiProfiler (parent platform): www.optprof.com
+Overview Link to heading OptiProfiler Agent is a Python package and CLI built to sit on top of the OptiProfiler benchmarking stack. Instead of treating documentation as static pages only, it packages Advisor, Debugger, and Interpreter capabilities so users can move from “how do I benchmark these solvers?</description></item><item><title>Exact lower bounds on the non-convergence probability of probabilistic direct search</title><link>https://opthuang.github.io/posts/exact-lower-bounds/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/exact-lower-bounds/</guid><description>Status: Work in progress, 2026.
+This note studies a quantitative aspect of non-convergence in probabilistic direct search. The goal is to better understand how likely certain failure patterns can be, and how their scale may be described.
+The manuscript is still being prepared, so I am keeping the technical details intentionally brief here.
+Coming soon.</description></item><item><title>Notes on stochastic orders and submartingale-like assumptions for optimization</title><link>https://opthuang.github.io/posts/stochastic-orders/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/stochastic-orders/</guid><description>Status: Work in progress, 2026.
+This note explores how stochastic comparison tools can simplify parts of randomized optimization analysis. The emphasis is on organizing familiar probabilistic assumptions in a cleaner way.
+The manuscript is still being prepared, so I am keeping the technical details intentionally brief here.
+Coming soon.</description></item><item><title>OptiProfiler: A Platform for Benchmarking Optimization Solvers</title><link>https://opthuang.github.io/posts/optiprofiler/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/optiprofiler/</guid><description>Status: Work in progress, 2026.
+Poster (Nonsmooth 2026)
+Official Website: www.optprof.com
+GitHub Repository: github.com/optiprofiler/optiprofiler
+Overview Link to heading OptiProfiler is a benchmarking platform for optimization solvers, with a current focus on derivative-free optimization. It is designed to make solver comparisons easier to run, reproduce, and inspect.
+The project is under active development, and the accompanying manuscript is still being prepared. I will add a fuller technical description once the public version is ready.</description></item><item><title>A unified series condition for the convergence of derivative-free trust region and direct search</title><link>https://opthuang.github.io/posts/unified-series/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/unified-series/</guid><description>Status: Work in progress, 2026.
+This note looks at a common way to view convergence mechanisms in derivative-free trust-region and direct-search methods. The aim is to connect two algorithmic families through a shared structural perspective.
+The manuscript is still being prepared, so I am keeping the technical details intentionally brief here.
+Coming soon.</description></item><item><title>Gradient convergence of direct search based on sufficient decrease</title><link>https://opthuang.github.io/posts/gradient-convergence/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/gradient-convergence/</guid><description>Status: Work in progress, 2026.
+This note studies convergence behavior for a class of direct-search methods. The focus is on understanding how simple algorithmic rules can influence the long-run behavior of the iterates.
+The manuscript is still being prepared, so I am keeping the technical details intentionally brief here.
+Coming soon.</description></item><item><title>Non-convergence analysis of probabilistic direct search</title><link>https://opthuang.github.io/posts/ncpds/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/ncpds/</guid><description>Paper: C. Huang and Z. Zhang. Non-convergence analysis of probabilistic direct search. Preprint, 2026.
+PDF | Poster (PRSC 2024)
+Overview Link to heading This paper establishes the non-convergence theory for probabilistic direct search. Probabilistic direct search is a class of derivative-free optimization methods that uses randomized polling directions to improve efficiency. Existing convergence theory shows that the algorithm converges when the polling direction sets satisfy a probabilistic descent assumption. We study a natural question: how will the algorithm behave when these assumptions are not met?</description></item><item><title>Error analysis of finite difference scheme for American option pricing under regime-switching with jumps</title><link>https://opthuang.github.io/posts/american-option/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/posts/american-option/</guid><description>Paper: C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023.
+PDF
+Overview Link to heading This paper develops an efficient numerical method for pricing American options under regime-switching jump-diffusion models (Merton&amp;rsquo;s and Kou&amp;rsquo;s models). The problem is formulated as a free-boundary problem or complementarity problem with integral and differential terms on an unbounded domain.</description></item><item><title/><link>https://opthuang.github.io/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/home/</guid><description>I am a PhD student at Department of Applied Mathematics, The Hong Kong Polytechnic University, supervised by Prof. Zaikun Zhang and Prof. Xiaojun Chen.
 Research interests Link to heading My research interests mainly focus on mathematical optimization and its applications, especially
-derivative-free optimization (DFO) (we made a Chinese popular science video about DFO and you can check it here), randomized methods. Education Link to heading 2022&amp;ndash;2026 (expected), PhD student in Applied Optimization and Optimal Control, Department of Applied Mathematics, The Hong Kong Polytechnic University, Hong Kong SAR, China.</description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://opthuang.github.io/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/blog/</guid>
-      <description>Coming soon!</description>
-    </item>
-    
-    <item>
-      <title>Papers</title>
-      <link>https://opthuang.github.io/papers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/papers/</guid>
-      <description>This is a list of my publications.
-C. Huang and Z. Zhang. Non-convergence Analysis of Probabilistic Direct Search. To appear, 2024. C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. Z. Gao, C. Huang, H. Song, and B. Zhou. Projection and contraction method for pricing american option under regime-switching model.</description>
-    </item>
-    
-    <item>
-      <title>Talks</title>
-      <link>https://opthuang.github.io/talks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/talks/</guid>
-      <description>This is a list of my talks, linked with the websites of the conferences and my slides.
-Non-convergence Analysis of Probabilistic Direct Search. The 25th International Symposium on Mathematical Programming (ISMP 2024), Montréal, Canada, 2024. Non-convergence Analysis of Probabilistic Direct Search. The 2nd Derivative-Free Optimization Symposium (DFOS 2024), Padova, Italy, 2024. Non-convergence Analysis of Probabilistic Direct Search. The 9th Graduate Student Forum of the Mathematical Programming Branch of ORSC, Chongqing, China, 2023.</description>
-    </item>
-    
-    <item>
-      <title>Team Z</title>
-      <link>https://opthuang.github.io/team/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opthuang.github.io/team/</guid>
-      <description>Team Leader: Assistant Professor Zaikun Zhang (second from the right)
-Team Member:
-Postdoctoral Fellow Tom M. Ragonneau (second from the left) PhD Candidate Haitian Li (first from the left) PhD Student Cunxin Huang (first from the right) Group Photo with Professor Ya-xiang Yuan (middle)</description>
-    </item>
-    
-  </channel>
-</rss>
+derivative-free optimization (DFO) (we made a Chinese popular science video about DFO and you can check it here), randomized methods. Education Link to heading 2022&amp;ndash;2026 (expected), PhD student in Applied Optimization and Optimal Control, Department of Applied Mathematics, The Hong Kong Polytechnic University, Hong Kong SAR, China.</description></item><item><title>Papers</title><link>https://opthuang.github.io/papers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/papers/</guid><description>Below is a list of my research papers.
+Preprints Link to heading C. Huang and Z. Zhang. Non-convergence analysis of probabilistic direct search. Preprint, 2026. [Note] Published Link to heading C. Huang, H. Song, J. Yang, and B. Zhou. Error analysis of finite difference scheme for american option pricing under regime-switching with jumps. J. Comput. Appl. Math., accepted for publication, 2023. [Note] Z. Gao, C. Huang, H. Song, and B. Zhou.</description></item><item><title>Talks</title><link>https://opthuang.github.io/talks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://opthuang.github.io/talks/</guid><description>This is a list of my talks, linked with the websites of the conferences and my slides.
+Non-convergence Analysis of Probabilistic Direct Search. The 25th International Symposium on Mathematical Programming (ISMP 2024), Montréal, Canada, 2024. Non-convergence Analysis of Probabilistic Direct Search. The 2nd Derivative-Free Optimization Symposium (DFOS 2024), Padova, Italy, 2024. Non-convergence Analysis of Probabilistic Direct Search. The 9th Graduate Student Forum of the Mathematical Programming Branch of ORSC, Chongqing, China, 2023.</description></item></channel></rss>

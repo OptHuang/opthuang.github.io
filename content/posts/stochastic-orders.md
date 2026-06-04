@@ -1,38 +1,17 @@
 ---
 title: "Notes on stochastic orders and submartingale-like assumptions for optimization"
 date: 2026-02-01
-description: "We show that dependent Bernoulli sequences under submartingale-like assumptions are stochastically dominated by i.i.d. benchmarks, enabling direct transfer of classical concentration inequalities."
+description: "A short work-in-progress note on stochastic comparison ideas for randomized optimization analyses. Coming soon."
 tags: ["Optimization", "Stochastic Analysis", "Probability"]
 coverImage: "/images/blog/sto_order.png"
 cardGradient: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)"
 math: true
 ---
 
-> **Paper**: C. Huang, Z. Jiang, and Z. Zhang. *Notes on stochastic orders and submartingale-like assumptions for optimization*. In preparation, 2026.
+> **Status**: Work in progress, 2026.
 
-## Overview
+This note explores how stochastic comparison tools can simplify parts of randomized optimization analysis. The emphasis is on organizing familiar probabilistic assumptions in a cleaner way.
 
-Submartingale-like assumptions of the form $P(Y_k = 1 \mid \mathcal{F}_{k-1}) \geq p$ are ubiquitous in the convergence analysis of randomized optimization methods. This paper establishes a clean comparison principle: any such dependent Bernoulli process is **stochastically larger** than an i.i.d. Bernoulli($p$) process in the usual stochastic order. This means that probabilistic bounds for all increasing functionals transfer directly from the simpler i.i.d. case.
+The manuscript is still being prepared, so I am keeping the technical details intentionally brief here.
 
-## Motivation
-
-- Submartingale-like assumptions appear in trust-region, line-search, cubic-regularization, and direct search methods. Each paper re-derives tail bounds (e.g., Hoeffding-type inequalities) from scratch using ad hoc arguments
-- A natural question: can we **systematically** relate these dependent sequences to their i.i.d. counterparts, so that classical results apply immediately?
-
-## Main Contributions
-
-- **Stochastic domination theorem**: If <span>$\{Y_k\}$</span> satisfies $P(Y_k = 1 \mid \mathcal{F}_{k-1}) \geq p$, then
-<div>$$\{\tilde{Y}_k\} \;\preceq_{\text{st}}\; \{Y_k\},$$</div>
-where <span>$\{\tilde{Y}_k\}$</span> is i.i.d. Bernoulli($p$). This holds in the usual stochastic order for stochastic processes
-
-- **Hoeffding-type bound**:
-$$P\biggl(\frac{1}{n}\sum_{k=0}^{n-1} Y_k \geq p - \varepsilon\biggr) \geq 1 - e^{-2n\varepsilon^2},$$
-with the same rate as the i.i.d. case
-
-- **Kolmogorov-type bound**:
-$$P\biggl(\inf_{k \geq n} \frac{1}{k}\sum_{\ell=0}^{k-1} Y_\ell \geq p - \varepsilon\biggr) \geq 1 - e^{-2n\varepsilon^2},$$
-providing uniform concentration over all future iterations
-
-## Key Ideas
-
-The proof leverages the **multivariate stochastic order** (Definition via upper sets in $\mathbb{R}^n$) and a component-wise comparison lemma: it suffices to show that each $Y_k$, conditioned on any realization of the past, stochastically dominates a Bernoulli($p$) variable — which is exactly what the submartingale-like assumption guarantees. The paper also explores the connection between upper sets, Alexandrov topology, and preorders, providing a unified mathematical framework.
+**Coming soon.**

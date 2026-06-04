@@ -122,11 +122,6 @@ name = "Talks"
 weight = 5
 url = "talks/"
 
-[[languages.en.menu.main]]
-name = "Team Z"
-weight = 6
-url = "team/"
-
 [languages.zh-cn]
 languageName = "中文"
 title = "存昕的网站"
@@ -163,8 +158,3 @@ url = "papers/"
 name = "报告"
 weight = 5
 url = "talks/"
-
-[[languages.zh-cn.menu.main]]
-name = "团队 Z"
-weight = 6
-url = "team/"
