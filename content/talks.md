@@ -5,6 +5,7 @@ draft: false
 
 This is a list of my talks, linked with the websites of the conferences and my slides.
 
+- [OptiProfiler: Toward a DFO Benchmarking Ecosystem](/documents/SIAM_OP26_2026_Edinburgh.pdf). [SIAM Conference on Optimization (OP26)](https://www.siam.org/conferences-events/siam-conferences/op26/), Edinburgh, United Kingdom, 2026.
 - [Non-convergence Analysis of Probabilistic Direct Search](/documents/ISMP_2024_Montreal.pdf). [The 25th International Symposium on Mathematical Programming (ISMP 2024)](https://ismp2024.gerad.ca), Montréal, Canada, 2024.
 - [Non-convergence Analysis of Probabilistic Direct Search](/documents/DFOS_2024_Padova.pdf). [The 2nd Derivative-Free Optimization Symposium (DFOS 2024)](https://dfos2024.diag.uniroma1.it), Padova, Italy, 2024.
 - [Non-convergence Analysis of Probabilistic Direct Search](/documents/MPORSC_2023_Chongqing.pdf). The 9th Graduate Student Forum of the Mathematical Programming Branch of ORSC, Chongqing, China, 2023.

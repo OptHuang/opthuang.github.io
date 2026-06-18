@@ -1,5 +1,6 @@
 ---
 draft: false
+layout: home
 
 ---
 

@@ -1,0 +1,37 @@
+{{ define "title" }}
+  {{ .Site.Params.author }} · {{ .Site.Title }}
+{{ end }}
+
+{{ define "content" }}
+  {{ $isZH := eq .Site.Language.Lang "zh-cn" }}
+  <section class="container home-demo">
+    <aside class="home-rail">
+      <p class="home-kicker">
+        {{ if $isZH }}数学优化 / 无导数优化 / 随机化方法{{ else }}Mathematical optimization / DFO / randomized methods{{ end }}
+      </p>
+      <h1>{{ .Site.Params.author }}</h1>
+      <p class="home-lead">
+        {{ if $isZH }}
+          香港理工大学应用数学系博士生，关注无导数优化与随机优化方法。
+        {{ else }}
+          PhD student in applied mathematics, working around derivative-free and randomized optimization.
+        {{ end }}
+      </p>
+      <nav class="home-jump-links" aria-label="{{ if $isZH }}主页快速导航{{ else }}Home quick links{{ end }}">
+        <a href="#research-interests">{{ if $isZH }}研究兴趣{{ else }}Research{{ end }}</a>
+        <a href="#education">{{ if $isZH }}教育经历{{ else }}Education{{ end }}</a>
+        <a href="{{ if $isZH }}/zh-cn/papers/{{ else }}/papers/{{ end }}">{{ if $isZH }}文章{{ else }}Papers{{ end }}</a>
+        <a href="{{ if $isZH }}/zh-cn/posts/{{ else }}/posts/{{ end }}">{{ if $isZH }}博客{{ else }}Blog{{ end }}</a>
+      </nav>
+      <div class="home-orbit" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </aside>
+
+    <article class="home-body">
+      {{ .Content }}
+    </article>
+  </section>
+{{ end }}

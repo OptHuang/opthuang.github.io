@@ -39,7 +39,7 @@ rtl = false
 # "auto" (use preference set by browser)
 # "dark" (dark background, light foreground)
 # "light" (light background, dark foreground) (default)
-colorScheme = "auto"
+colorScheme = "dark"
 # Hide the toggle button, along with the associated vertical divider
 hideColorSchemeToggle = false
 # Series see also post count
@@ -50,7 +50,7 @@ customCSS = []
 customSCSS = ["scss/custom.scss"]
 
 # Custom JS
-customJS = []
+customJS = ["js/interactive-demo.js"]
 
 # Custom remote JS files
 customRemoteJS = []
