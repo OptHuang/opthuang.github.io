@@ -9,4 +9,8 @@ A small collection of AI tools and practical experiments I keep close at hand.
 
 [Frontier Model Bench](https://opthuang.github.io/frontier-model-bench/) is a lightweight dashboard for comparing frontier models across agentic and benchmark capabilities.
 
-This is the first tool in the collection. More practical tools will follow.
+## Optimization Solver & Benchmark Atlas
+
+[Optimization Solver Bench](https://opthuang.github.io/optimization-solver-bench/) is an evidence-driven atlas for comparing optimization solvers, benchmark suites, and published evaluation campaigns. It keeps capability claims separate from performance results and links them back to their sources.
+
+More practical tools will follow.
