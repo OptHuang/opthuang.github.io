@@ -19,9 +19,9 @@ noClasses = false
 [params]
 author = "Cunxin Huang"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "Cunxin Huang's personal website"
-keywords = "math,code,blog"
-info = ["Welcome to My Math Subspace"]
+description = "Cunxin Huang's website on AI for Science, AI for Industry, and derivative-free optimization"
+keywords = "AI for Science, AI for Industry, derivative-free optimization, mathematical optimization"
+info = ["AI for Science", "AI for Industry", "DFO"]
 avatarURL = "images/avatar.jpg"
 
 faviconSVG = "images/favicon.svg"
@@ -122,15 +122,20 @@ name = "Talks"
 weight = 5
 url = "talks/"
 
+[[languages.en.menu.main]]
+name = "Tools"
+weight = 6
+url = "tools/"
+
 [languages.zh-cn]
 languageName = "中文"
 title = "存昕的网站"
 
 [languages.zh-cn.params]
 author = "黄存昕"
-info = "欢迎来到我的数学子空间"
-description = "黄存昕的个人网站"
-keywords = "数学，代码，博客"
+info = "AI for Science / AI for Industry / 无导数优化"
+description = "黄存昕关于 AI for Science、AI for Industry 与无导数优化的个人主页"
+keywords = "AI for Science，AI for Industry，无导数优化，数学优化"
 
 [[languages.zh-cn.menu.main]]
 name = "主页"
@@ -158,3 +163,8 @@ url = "papers/"
 name = "报告"
 weight = 5
 url = "talks/"
+
+[[languages.zh-cn.menu.main]]
+name = "工具"
+weight = 6
+url = "tools/"

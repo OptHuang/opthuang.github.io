@@ -22,11 +22,24 @@
   window.addEventListener("scroll", requestScrollUpdate, { passive: true });
   window.addEventListener("resize", requestScrollUpdate);
 
+  const focusTargets = document.querySelectorAll("[data-home-focus]");
+  const setHomeFocus = (focus) => {
+    root.dataset.homeFocus = focus;
+    focusTargets.forEach((target) => {
+      target.classList.toggle("is-active", target.dataset.homeFocus === focus);
+    });
+  };
+
+  if (focusTargets.length) {
+    setHomeFocus("intro");
+  }
+
   if (reduceMotion || !("IntersectionObserver" in window)) {
     return;
   }
 
   const revealTargets = document.querySelectorAll([
+    ".home-reveal",
     ".home-body > *",
     ".blog-cards .card",
     ".page article > h2",
@@ -44,7 +57,19 @@
         observer.unobserve(entry.target);
       }
     });
-  }, { rootMargin: "0px 0px -12% 0px", threshold: 0.1 });
+  }, { rootMargin: "0px 0px -6% 0px", threshold: 0.05 });
 
   revealTargets.forEach((target) => observer.observe(target));
+
+  if (focusTargets.length) {
+    const focusObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setHomeFocus(entry.target.dataset.homeFocus);
+        }
+      });
+    }, { rootMargin: "-38% 0px -48% 0px", threshold: 0 });
+
+    focusTargets.forEach((target) => focusObserver.observe(target));
+  }
 })();

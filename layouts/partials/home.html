@@ -1,0 +1,124 @@
+{{ $contentPage := . }}
+{{ if .IsHome }}
+  {{ with .Site.GetPage "/home" }}
+    {{ $contentPage = . }}
+  {{ end }}
+{{ end }}
+{{ $isZH := eq .Site.Language.Lang "zh-cn" }}
+
+<section class="container home-demo">
+  <aside class="home-rail{{ if $isZH }} home-rail--zh{{ end }}">
+    <div class="home-rail__signal" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <p class="home-kicker">{{ if $isZH }}AI for Science / AI for Industry / 无导数优化{{ else }}AI for Science / AI for Industry / DFO{{ end }}</p>
+    <h1>{{ if $isZH }}黄存昕{{ else }}Cunxin<br>Huang{{ end }}</h1>
+    <p class="home-lead">
+      {{ if $isZH }}以数学优化为基础，关注科学与工业问题中的智能体、算法评测与算法演化。{{ else }}Mathematical optimization as a base for scientific and industrial AI systems.{{ end }}
+    </p>
+    <nav class="home-jump-links" aria-label="{{ if $isZH }}主页快速导航{{ else }}Home quick links{{ end }}">
+      <a href="#dfo">DFO</a>
+      <a href="#ai">AI</a>
+      <a href="#education">{{ if $isZH }}经历{{ else }}Background{{ end }}</a>
+      <a href="{{ if $isZH }}/zh-cn/posts/{{ else }}/posts/{{ end }}">{{ if $isZH }}博客{{ else }}Notes{{ end }}</a>
+    </nav>
+    <div class="home-socials" aria-label="{{ if $isZH }}社交链接{{ else }}Social links{{ end }}">
+      {{ partial "home/social.html" . }}
+    </div>
+    <figure class="home-photo">
+      <img src="{{ "/images/avatar-cartoon-home.webp" | relURL }}" alt="{{ if $isZH }}黄存昕在夜景中的像素风插画头像{{ else }}A pixel-art portrait of Cunxin Huang by the waterfront at night{{ end }}" width="900" height="675" loading="eager" decoding="async">
+      <figcaption>{{ if $isZH }}研究之外的一帧{{ else }}A moment outside the office{{ end }}</figcaption>
+    </figure>
+    <div class="home-rail__caption">
+      <span class="home-rail__caption-line"></span>
+      <span>{{ if $isZH }}两个领域，一条研究轨迹{{ else }}Two fields, one trajectory{{ end }}</span>
+    </div>
+  </aside>
+
+  <div class="home-sheet">
+    <div class="home-flow">
+      <section class="home-intro home-reveal" data-home-focus="intro" id="about">
+        <div class="home-intro__topline">
+          <p class="home-section-label">01 / {{ if $isZH }}个人简介{{ else }}PROFILE{{ end }}</p>
+          <span class="home-intro__stamp">AI + DFO</span>
+        </div>
+        <p class="home-intro__text">
+          {{ if $isZH }}我目前是<a href="https://www.polyu.edu.hk">香港理工大学</a>应用数学系的博士生，正在从事 <span class="home-intro__keyword">AI4Science</span> 与 <span class="home-intro__keyword">AI4Industry</span>。{{ else }}I am a PhD student in Applied Mathematics at <a href="https://www.polyu.edu.hk">The Hong Kong Polytechnic University</a>, working on <span class="home-intro__keyword">AI4Science</span> and <span class="home-intro__keyword">AI4Industry</span>.{{ end }}
+        </p>
+        <p class="home-intro__subtext">
+          {{ if $isZH }}我以数学优化为基础，构建和评测面向科学与工业问题的 AI 系统。{{ else }}With mathematical optimization as my foundation, I build and evaluate AI systems for scientific and industrial problems.{{ end }}
+        </p>
+        <div class="home-facts">
+          <span>{{ if $isZH }}应用数学{{ else }}Applied mathematics{{ end }}</span>
+          <span>{{ if $isZH }}香港理工大学{{ else }}The Hong Kong Polytechnic University{{ end }}</span>
+          <span>{{ if $isZH }}香港{{ else }}Hong Kong{{ end }}</span>
+        </div>
+      </section>
+
+      <section class="home-focus home-focus--dfo home-reveal" data-home-focus="dfo" id="dfo">
+        <div class="home-focus__topline">
+          <span class="home-index">02</span>
+          <span class="home-domain">DFO</span>
+          <span class="home-domain__hint">{{ if $isZH }}理论与随机性{{ else }}theory and randomness{{ end }}</span>
+        </div>
+        <h2>{{ if $isZH }}无导数优化{{ else }}Derivative-free optimization{{ end }}</h2>
+        <p>
+          {{ if $isZH }}研究无导数方法、直接搜索和随机化算法中的收敛行为，尤其关注算法在不同假设下如何表现。{{ else }}I study derivative-free methods, direct search, and randomized algorithms, with an emphasis on how their convergence behavior depends on the assumptions behind them.{{ end }}
+        </p>
+        <div class="home-tags" aria-label="DFO topics">
+          <span>{{ if $isZH }}收敛性{{ else }}convergence{{ end }}</span>
+          <span>{{ if $isZH }}随机化方法{{ else }}randomized methods{{ end }}</span>
+          <span>{{ if $isZH }}直接搜索{{ else }}direct search{{ end }}</span>
+        </div>
+        <a class="home-text-link" href="{{ if $isZH }}/zh-cn/papers/{{ else }}/papers/{{ end }}">
+          {{ if $isZH }}查看文章{{ else }}View papers{{ end }} <span aria-hidden="true">-></span>
+        </a>
+      </section>
+
+      <section class="home-bridge home-reveal" data-home-focus="bridge" aria-label="{{ if $isZH }}研究连接{{ else }}Research connection{{ end }}">
+        <p class="home-section-label">03 / {{ if $isZH }}连接{{ else }}BRIDGE{{ end }}</p>
+        <p class="home-bridge__statement">
+          {{ if $isZH }}从理解算法如何工作，到构建能够改进算法的系统。{{ else }}From understanding how algorithms behave, to building systems that improve them.{{ end }}
+        </p>
+      </section>
+
+      <section class="home-focus home-focus--ai home-reveal" data-home-focus="ai" id="ai">
+        <div class="home-focus__topline">
+          <span class="home-index">04</span>
+          <span class="home-domain">AI</span>
+          <span class="home-domain__hint">{{ if $isZH }}科学与工业系统{{ else }}scientific and industrial systems{{ end }}</span>
+        </div>
+        <h2>AI for Science / AI for Industry</h2>
+        <p>
+          {{ if $isZH }}关注科学计算和工业优化中的智能体工作流、benchmark/evaluator 与算法演化。最近参与的四个 Terminal-Bench Science 任务已被收录进 v0.1。{{ else }}I work on agent workflows, benchmark/evaluator design, and algorithmic evolution for scientific computing and industrial optimization. Four tasks I contributed to were accepted into Terminal-Bench Science v0.1.{{ end }}
+        </p>
+        <div class="home-tags" aria-label="AI topics">
+          <span>AI for Science</span>
+          <span>AI for Industry</span>
+          <span>benchmarking</span>
+        </div>
+        <a class="home-text-link" href="{{ if $isZH }}/zh-cn/posts/terminal-bench-science/{{ else }}/posts/terminal-bench-science/{{ end }}">
+          {{ if $isZH }}阅读这篇 note{{ else }}Read the note{{ end }} <span aria-hidden="true">-></span>
+        </a>
+      </section>
+
+      <section class="home-background home-reveal" data-home-focus="background" id="education">
+        <div class="home-background__heading">
+          <p class="home-section-label">05 / {{ if $isZH }}背景{{ else }}BACKGROUND{{ end }}</p>
+          <h2>{{ if $isZH }}教育经历{{ else }}Education{{ end }}</h2>
+        </div>
+        <div class="home-content">
+          {{ $contentPage.Content }}
+        </div>
+      </section>
+
+      <footer class="home-end home-reveal">
+        <span>{{ if $isZH }}继续探索{{ else }}Keep exploring{{ end }}</span>
+        <a href="{{ if $isZH }}/zh-cn/talks/{{ else }}/talks/{{ end }}">{{ if $isZH }}报告{{ else }}Talks{{ end }}</a>
+        <a href="{{ if $isZH }}/zh-cn/posts/{{ else }}/posts/{{ end }}">{{ if $isZH }}博客{{ else }}Notes{{ end }}</a>
+        <a href="{{ if $isZH }}/zh-cn/papers/{{ else }}/papers/{{ end }}">{{ if $isZH }}文章{{ else }}Papers{{ end }}</a>
+        <a href="{{ if $isZH }}/zh-cn/tools/{{ else }}/tools/{{ end }}">{{ if $isZH }}工具{{ else }}Tools{{ end }}</a>
+      </footer>
+    </div>
+  </div>
+</section>
