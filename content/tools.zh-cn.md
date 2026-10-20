@@ -1,6 +1,6 @@
 ---
 title: AI 工具
-draft: false
+draft: true
 ---
 
 这里记录一些我自己常用、也值得持续打磨的 AI 工具和实践项目。
