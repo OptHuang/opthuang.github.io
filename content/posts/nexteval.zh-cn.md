@@ -64,6 +64,60 @@ NextEval Bench 通过无导数优化（DFO）任务评测 Agent。Agent 面对�
 
 我建议先看各任务的差异，再挑几个问题检查搜索历史。总分的小幅差异可能来自重复运行波动，网站目前也建议谨慎对待约 0.05 以下的差距。此外，当前问题集是公开的低维问题，起点扰动和旋转并不能保证模型无法识别问题。理解这些条件，才能更准确地判断 Bench 测到了什么。
 
+## 从可视化中能看到什么？
+
+以下图表根据 **11 月 6 日的公开快照**重绘，于 11 月 9 日读取。它们采用官网展示的配置、COBYQA 配对分数及每类任务三次重复的设置。[配图数据](/documents/nexteval-blog-figures-20261109.json)保留了来源链接、哈希和以下分析使用的数值。这些分析描述的是该快照中的现象。
+
+### 1. 最高分只是一个预算选择
+
+[![美元成本 Pareto 前沿：44 个配置，标出非支配配置，并用空心点区分包含估计用量的数据。](/images/blog/nexteval-cost-pareto.png)](/images/blog/nexteval-cost-pareto.png)
+
+*纵轴为四类任务平均配对分数，横轴为每次运行的平均 API 等价美元费用。价格日期为 11 月 4 日，空心点包含估计用量。[交互式成本视图](https://nexteval.github.io/bench/#pareto?metric=cost)。*
+
+以 Codex 中的 GPT-6.1 Sol 为例：medium 的平均分数为 **0.690，约 $0.0599/次运行**；high 为 **0.726，约 $0.0987/次运行**。后者费用增加约 **65%**，对应显示分数增加 0.036。这首先是一个预算选择；仅凭这一小幅分数差异，还不能确认有统计上可靠的收益。
+
+前沿也包含更便宜、分数更低的配置。“非支配”只表示当前展示的配置中，没有另一个同时更便宜且分数更高的选择，并不代表它满足应用所需的质量门槛。图中的 COBYQA 虚线有助于区分这两个问题。45 个展示配置中，44 个有四类任务完整的可用成本数据，其中 17 个点包含估计用量。
+
+### 2. 美元便宜，不代表 token 用得少
+
+[![Token 用量 Pareto 前沿，展示与美元成本前沿不同的非支配配置。](/images/blog/nexteval-tokens-pareto.png)](/images/blog/nexteval-tokens-pareto.png)
+
+*45 个配置都有四类任务的可用 token 数据，其中 17 个点包含估计。[交互式 token 视图](https://nexteval.github.io/bench/#pareto?metric=tokens)。*
+
+Codex 中的 Qwen 3.8 Flash（high）位于美元成本前沿：约 **$0.0296/次运行**，平均分数 **0.600**。但它平均每次运行使用约 **65.4 万 token**。GPT-6.1 Sol（medium）约为 **14.3 万 token**，平均分数也更高，为 **0.690**，因此 Qwen 不在 token 前沿上。
+
+两张图回答的是不同问题。美元费用受定价和 token 类别影响，token 总量则反映另一种资源使用情况。对于优化应用，我会将这两者与函数评估预算一起考虑，而不只看按分数排列的榜单。图中的美元费用按公开标价折算，不是实际账单。
+
+### 3. 坐标旋转暴露了共同的薄弱环节
+
+[![45 个配置在四类任务上的分数分布，旋转任务的中位数最低。](/images/blog/nexteval-task-distributions.png)](/images/blog/nexteval-task-distributions.png)
+
+*每个点是一个配置，不是一个独立的实验重复。箱体汇总配置分布的四分位数。[任务矩阵](https://nexteval.github.io/bench/#matrix)。*
+
+旋转任务中，只有 **10/45** 个配置高于 0.500；噪声任务中则有 **42/45**。两者中位数分别为 **0.384** 和 **0.659**；起点扰动与随机 NaN 的中位数分别为 0.476 和 0.632。
+
+因此，旋转是当前系统一个值得重点检查的设置：当坐标对齐发生变化时，Agent 相对于 COBYQA 的表现往往更弱。这提示我们进一步查看搜索方向选择和局部模型的行为，但这张图本身不能确定原因。它也不表示噪声让优化变容易了，因为不同任务有各自的 Agent–COBYQA 比较和评分目标。
+
+### 4. Harness 的影响取决于模型
+
+[![八组同模型、high 推理强度下的 Codex 与 Claude Code 比较。](/images/blog/nexteval-harness-comparison.png)](/images/blog/nexteval-harness-comparison.png)
+
+*包含所有八组可用的同模型、high 配置；右侧为 Claude Code 减去 Codex 的四任务平均配对分数差。*
+
+GLM 5.3 从 **Codex 中的 0.459 变为 Claude Code 中的 0.592**；Kimi K3 的方向则相反，从 **0.547 变为 0.472**。Qwen 3.8 Max 的差异很小，两者分别为 0.523 和 0.525。
+
+这对实际使用的启示是：应当评测**模型与 harness 的组合**。不同模型上的变化方向并不一致。这里比较的是包含工具处理、上下文管理等因素的完整系统，不能将差异单独归因于某个组件，也不能认为每一个分数差都已得到显著性验证。
+
+### 5. 总分很强，仍然会在具体案例上失手
+
+[![GPT-6.1 Sol high 经 Codex 运行时，与 COBYQA 在噪声和旋转任务上的性能剖面，精度为 1e-6。](/images/blog/nexteval-pair-profiles.png)](/images/blog/nexteval-pair-profiles.png)
+
+*选取该快照中四任务均分最高的配置作为案例。每个面板有 276 个案例，精度为 `1e-6`，目标按各自配对定义。[查看这个 Agent](https://nexteval.github.io/bench/#agent/codex--gpt-6.1-sol--high)。*
+
+噪声任务中，有 **197 个案例只有 Agent 达到目标**，同时也有 **28 个案例只有 COBYQA 达到目标**。旋转任务中的对应数字是 106 和 12。因此，即便均分最高，也仍存在经典求解器成功而 Agent 没有达标的案例。
+
+性能剖面帮助区分了两个问题：**多快达到目标**，以及**预算内能否达到目标**。接下来的分析可以聚焦于只有 COBYQA 达标的历史，检查是否出现过早停止、无效的方法切换或不合适的搜索尺度。曲线帮助定位这些问题；具体行为解释仍需要搜索记录来支持。
+
 ## NextEval Solver：Agent 决策，数值工具执行
 
 [NextEval Solver](https://nexteval.github.io/solver/) 将 LLM Agent 与数值环境结合。Agent 选择工具、调整参数、分配每次调用的评估额度；数值方法负责计算候选点并评估目标函数。

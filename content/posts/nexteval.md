@@ -64,6 +64,60 @@ Adding another agent leaves an existing pair score unchanged, provided the two m
 
 I recommend starting with task-level differences and then inspecting histories on a few problems. Small aggregate gaps can reflect repeat-to-repeat variation, and the website currently advises treating gaps below about 0.05 cautiously. The suite remains low-dimensional and public; perturbation and rotation do not guarantee that a model cannot recognize a problem. These details matter when interpreting what the benchmark measures.
 
+## What the Visuals Reveal
+
+The following figures are redrawn from the **November 6 public snapshot**, accessed on November 9. They use the website's displayed configurations and COBYQA pair scores, with three repeats per task. The [figure data](/documents/nexteval-blog-figures-20261109.json) includes source URLs, hashes, and the values used below. These are descriptive analyses of that snapshot.
+
+### 1. The Highest Score Is One Operating Point
+
+[![Dollar-cost Pareto frontier: 44 configurations, with non-dominated configurations labelled and estimated usage shown as hollow points.](/images/blog/nexteval-cost-pareto.png)](/images/blog/nexteval-cost-pareto.png)
+
+*Four-task mean score against mean API-equivalent USD per run. Prices are dated November 4; hollow points include estimated usage. [Interactive cost view](https://nexteval.github.io/bench/#pareto?metric=cost).*
+
+GPT-6.1 Sol through Codex illustrates the trade-off. At medium effort, its mean score is **0.690 at $0.0599 per run**; high effort gives **0.726 at $0.0987**. The latter spends about **65% more** for a 0.036 increase in the displayed score. That is a budget decision, and this small score gap alone does not establish a statistically reliable gain.
+
+The frontier includes cheaper, lower-scoring options too. Being non-dominated means no displayed alternative is both cheaper and better-scoring; it does not mean the configuration clears a desired quality threshold. The dashed COBYQA line helps distinguish these questions. Of 45 displayed agent configurations, 44 have usable four-task cost data; 17 of those points include estimates.
+
+### 2. Cheap in Dollars Does Not Mean Frugal in Tokens
+
+[![Token-usage Pareto frontier, showing a different set of non-dominated configurations from the dollar-cost plot.](/images/blog/nexteval-tokens-pareto.png)](/images/blog/nexteval-tokens-pareto.png)
+
+*All 45 configurations have usable four-task token data; 17 points include estimates. [Interactive token view](https://nexteval.github.io/bench/#pareto?metric=tokens).*
+
+Qwen 3.8 Flash (high) through Codex is on the dollar-cost frontier: about **$0.0296 per run**, with a mean score of **0.600**. Yet it uses about **654k tokens per run**. GPT-6.1 Sol (medium) uses about **143k**, with a higher mean score of **0.690**, so Qwen is not on the token frontier.
+
+The two plots answer different questions. Prices and token categories affect dollar cost; token volume measures another aspect of resource use. For an optimization application, I would consider both alongside the objective-evaluation budget, rather than choosing from a score-only ranking. The plotted dollar costs are API-equivalent estimates from list prices, not bills.
+
+### 3. Rotation Exposes a Shared Weakness
+
+[![Distributions of all 45 configuration scores across the four tasks; rotated coordinates have the lowest median.](/images/blog/nexteval-task-distributions.png)](/images/blog/nexteval-task-distributions.png)
+
+*Each dot is a configuration, not an independent experimental repeat. Boxes summarize configuration quartiles. [Task matrix](https://nexteval.github.io/bench/#matrix).*
+
+Only **10 of 45** configurations score above 0.500 on rotated coordinates, compared with **42 of 45** on noisy observations. The corresponding medians are **0.384** and **0.659**; perturbed starts and random NaN have medians of 0.476 and 0.632.
+
+This makes rotation a useful diagnostic for the current systems: their relative position against COBYQA is often weaker when coordinate alignment changes. It motivates inspecting search-direction choices and local-model behavior. The plot does not identify the cause, and it does not show that noise makes optimization easier: each task uses its own agent–COBYQA comparisons and scoring targets.
+
+### 4. Harness Choice Interacts with Model Choice
+
+[![Same-model, high-effort comparisons between Codex and Claude Code for all eight available matched model pairs.](/images/blog/nexteval-harness-comparison.png)](/images/blog/nexteval-harness-comparison.png)
+
+*All eight available same-model, high-effort pairs; the right column is Claude Code minus Codex in four-task mean pair score.*
+
+GLM 5.3 moves from **0.459 in Codex to 0.592 in Claude Code**, while Kimi K3 moves in the opposite direction, from **0.547 to 0.472**. Qwen 3.8 Max is almost unchanged, at 0.523 and 0.525.
+
+The practical implication is to evaluate the **model–harness combination**. The observed direction is not uniform across models. These are whole-system comparisons, including tool handling and conversation management; the chart neither isolates one harness component nor establishes significance for every gap.
+
+### 5. A Strong Mean Still Contains Individual Losses
+
+[![Performance profiles for GPT-6.1 Sol high through Codex versus COBYQA, on noisy and rotated tasks at tolerance 1e-6.](/images/blog/nexteval-pair-profiles.png)](/images/blog/nexteval-pair-profiles.png)
+
+*One configuration, selected because it has the highest four-task mean in this snapshot. Each panel has 276 cases and its own pair-specific targets at tolerance `1e-6`. [Inspect this agent](https://nexteval.github.io/bench/#agent/codex--gpt-6.1-sol--high).*
+
+On noisy observations, **197 cases** reach the target only with the agent, while **28 reach it only with COBYQA**. On rotated coordinates, those counts are 106 and 12. Thus, even the highest aggregate score leaves cases where the numerical baseline succeeds and the agent does not.
+
+These profiles separate **how quickly a target is reached** from **whether it is reached within the budget**. That distinction directs the next investigation: inspect the histories of the COBYQA-only cases to look for premature stopping, unproductive method switches, or unsuitable search scales. The curves locate those questions; they do not establish a behavioral explanation without the traces.
+
 ## NextEval Solver: Agent Decisions, Numerical Execution
 
 The [NextEval Solver](https://nexteval.github.io/solver/) combines an LLM agent with a numerical environment. The agent selects tools, adjusts parameters, and assigns evaluation allowances. Numerical routines compute candidate points and evaluate the objective.
